@@ -62,7 +62,7 @@ int main( void )
 
 	InitTimer( &Timer1 );
 	InitTimer( &Timer4 );
-	InitTimer3( &Timer3 );
+	InitTimer( &Timer3 );
 	
 	InitButtons( &Buttons );
 	

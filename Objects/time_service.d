@@ -1,0 +1,17 @@
+.\objects\time_service.o: Services\time_service.c
+.\objects\time_service.o: .\Services\time_service.h
+.\objects\time_service.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\time_service.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\time_service.o: .\CMSIS\stm32f10x.h
+.\objects\time_service.o: .\CMSIS\core_cm3.h
+.\objects\time_service.o: .\CMSIS\system_stm32f10x.h
+.\objects\time_service.o: .\CMSIS\stm32f10x_conf.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\time_service.o: .\CMSIS\stm32f10x.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_exti.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_rcc.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_tim.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\time_service.o: .\SPL\inc\misc.h
+.\objects\time_service.o: .\Library\macros.h

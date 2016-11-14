@@ -1,0 +1,73 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: sergeyf Microsoft, Microsoft, LIC=0VR56-DD64Y-8WF2D-84S8G-18VH0-PCFNR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+    Target DLL: STLink\ST-LINKIII-KEIL_SWO.dll
+Dialog DLL:      TARMSTM.DLL V1.64.0.0
+ 
+<h2>Project:</h2>
+D:\Dropbox\AutomatSTM32\Base\Base.uvprojx
+Project File Date:  01/27/2016
+
+<h2>Output:</h2>
+Rebuild target 'Base'
+assembling startup_stm32f10x_md.s...
+compiling main.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+compiling misc.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_usart.c...
+compiling time_service.c...
+compiling common.c...
+compiling crc.c...
+compiling link_slave.c...
+Library\link_slave.c(15): warning:  #1215-D: #warning directive: Setup connection delay for debug
+  #warning Setup connection delay for debug
+Library\link_slave.c(195): warning:  #1215-D: #warning directive: Lost connection handler here
+        #warning Lost connection handler here
+Library\link_slave.c(27): warning:  #177-D: function "initGpio" was declared but never referenced
+  static void initGpio(void);
+Library\link_slave.c(28): warning:  #177-D: function "enableTransmit" was declared but never referenced
+  static void enableTransmit(void);
+Library\link_slave.c(29): warning:  #177-D: function "disableTransmit" was declared but never referenced
+  static void disableTransmit(void);
+Library\link_slave.c: 5 warnings, 0 errors
+compiling self_control.c...
+compiling uart.c...
+compiling mg_canal_level.c...
+compiling mg_common.c...
+compiling mg_data_level.c...
+compiling mg_regs.c...
+linking...
+Program Size: Code=13896 RO-data=268 RW-data=384 ZI-data=2176  
+FromELF: creating hex file...
+".\Objects\DisplayModule.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  D:\Dropbox\AutomatSTM32\Base\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Load "D:\\Dropbox\\AutomatSTM32\\Base\\Objects\\DisplayModule.axf" 
+Error: Flash Download failed  -  Target DLL has been cancelled
+</pre>
+</body>
+</html>

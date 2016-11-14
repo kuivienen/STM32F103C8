@@ -1,0 +1,248 @@
+Dependencies for Project 'Base', Target 'Base': (DO NOT MODIFY !)
+F (.\StartUp\startup_stm32f10x_md.s)(0x4F1E667C)(--cpu Cortex-M3 -g --apcs=interwork -I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
+F (.\MAIN\main.c)(0x56B21423)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\milli_ganjubus.h)(0x547EAA56)
+I (.\MilliG\ganjubus_common.h)(0x547EAA56)
+I (.\MilliG\mg_common.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\MilliG\mg_canal_level.h)(0x547EAA56)
+I (.\Library\crc.h)(0x547EAA56)
+I (.\Library\common.h)(0x547EAA56)
+I (.\MilliG\mg_data_level.h)(0x547EAA56)
+I (.\Library\self_control.h)(0x562F95E9)
+I (.\Library\uart.h)(0x54F9607E)
+I (.\Library\link_slave.h)(0x547EAA56)
+F (.\CMSIS\core_cm3.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\core_cm3.o --omf_browse .\objects\core_cm3.crf --depend .\objects\core_cm3.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+F (.\CMSIS\core_cm3.h)(0x547EAA56)()
+F (.\CMSIS\stm32f10x.h)(0x562F8B3F)()
+F (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)()
+F (.\CMSIS\system_stm32f10x.c)(0x4D788300)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\system_stm32f10x.o --omf_browse .\objects\system_stm32f10x.crf --depend .\objects\system_stm32f10x.d)
+I (CMSIS\stm32f10x.h)(0x562F8B3F)
+I (CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)()
+F (.\SPL\src\misc.c)(0x547EAA60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+F (.\SPL\src\stm32f10x_exti.c)(0x547EAA60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_exti.o --omf_browse .\objects\stm32f10x_exti.crf --depend .\objects\stm32f10x_exti.d)
+I (.\SPL\inc\stm32f10x_exti.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\SPL\src\stm32f10x_rcc.c)(0x547EAA60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_rcc.o --omf_browse .\objects\stm32f10x_rcc.crf --depend .\objects\stm32f10x_rcc.d)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\SPL\src\stm32f10x_gpio.c)(0x547EAA60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_gpio.o --omf_browse .\objects\stm32f10x_gpio.crf --depend .\objects\stm32f10x_gpio.d)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\SPL\src\stm32f10x_usart.c)(0x547EAA60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\stm32f10x_usart.o --omf_browse .\objects\stm32f10x_usart.crf --depend .\objects\stm32f10x_usart.d)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\Services\time_service.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\time_service.o --omf_browse .\objects\time_service.crf --depend .\objects\time_service.d)
+I (.\Services\time_service.h)(0x562F89DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\Library\macros.h)(0x547EAA56)
+F (.\Library\common.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\common.o --omf_browse .\objects\common.crf --depend .\objects\common.d)
+I (.\Library\common.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+F (.\Library\crc.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\crc.o --omf_browse .\objects\crc.crf --depend .\objects\crc.d)
+I (.\Library\crc.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+F (.\Library\link_slave.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\link_slave.o --omf_browse .\objects\link_slave.crf --depend .\objects\link_slave.d)
+I (.\Library\link_slave.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\MilliG\milli_ganjubus.h)(0x547EAA56)
+I (.\MilliG\ganjubus_common.h)(0x547EAA56)
+I (.\MilliG\mg_common.h)(0x547EAA56)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\MilliG\mg_canal_level.h)(0x547EAA56)
+I (.\Library\crc.h)(0x547EAA56)
+I (.\Library\common.h)(0x547EAA56)
+I (.\MilliG\mg_data_level.h)(0x547EAA56)
+I (.\Library\uart.h)(0x54F9607E)
+F (.\Library\self_control.c)(0x56A89D13)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\self_control.o --omf_browse .\objects\self_control.crf --depend .\objects\self_control.d)
+I (.\Library\self_control.h)(0x562F95E9)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\Library\uart.h)(0x54F9607E)
+F (.\Library\uart.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
+I (Library\uart.h)(0x54F9607E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\Services\time_service.h)(0x562F89DE)
+F (.\MilliG\mg_canal_level.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_canal_level.o --omf_browse .\objects\mg_canal_level.crf --depend .\objects\mg_canal_level.d)
+I (.\MilliG\mg_canal_level.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\MilliG\ganjubus_common.h)(0x547EAA56)
+I (.\MilliG\mg_common.h)(0x547EAA56)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\Library\crc.h)(0x547EAA56)
+I (.\Library\common.h)(0x547EAA56)
+F (.\MilliG\mg_common.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_common.o --omf_browse .\objects\mg_common.crf --depend .\objects\mg_common.d)
+I (.\MilliG\mg_common.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\MilliG\ganjubus_common.h)(0x547EAA56)
+F (.\MilliG\mg_data_level.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_data_level.o --omf_browse .\objects\mg_data_level.crf --depend .\objects\mg_data_level.d)
+I (.\MilliG\mg_data_level.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\MilliG\ganjubus_common.h)(0x547EAA56)
+I (.\MilliG\mg_common.h)(0x547EAA56)
+I (.\Services\time_service.h)(0x562F89DE)
+I (.\Library\macros.h)(0x547EAA56)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)
+I (.\Library\common.h)(0x547EAA56)
+F (.\MilliG\mg_regs.c)(0x547EAA56)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG --C99-I D:\Dropbox\AutomatSTM32\Base\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_regs.o --omf_browse .\objects\mg_regs.crf --depend .\objects\mg_regs.d)
+I (.\MilliG\mg_regs.h)(0x547EAA56)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5419E3CA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x5419E3CC)
+I (.\CMSIS\stm32f10x.h)(0x562F8B3F)
+I (.\CMSIS\core_cm3.h)(0x547EAA56)
+I (.\CMSIS\system_stm32f10x.h)(0x4D7882FA)
+I (.\CMSIS\stm32f10x_conf.h)(0x562F7F24)
+I (.\SPL\inc\stm32f10x_gpio.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_rcc.h)(0x547EAA60)
+I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
+I (.\SPL\inc\misc.h)(0x547EAA60)
+I (.\MilliG\mg_reg_names.h)(0x56A89A06)

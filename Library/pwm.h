@@ -11,7 +11,7 @@
 #include "macros.h"
 #include <time_service.h>
 
-#include "math.h"
+#include "stdlib.h"
 
 /**************************************************************************************************
                                           НАСТРОЙКИ ТАЙМЕРОВ
@@ -83,15 +83,19 @@
 /**********настройка таймера для формирования ускорения и торможения*******/	
 
 #define TIMER_3
-	#define TIMER3_REGS							TIM3
+	#define TIMER3_REGS						TIM3
 //	флаг прерывания 
-	#define TIMER3_IRQ							TIM3_IRQn
+	#define TIMER3_IRQ						TIM3_IRQn
+	#define TIMER3_CH1						&Timer1
+	#define TIMER3_CH2						&Timer1
+	#define TIMER3_CH3						&Timer4
+	#define TIMER3_CH4						&Timer4
 	
 /**************************************************************************************************
                                           ТИПЫ ДАННЫХ
 **************************************************************************************************/
 //*******структура данных для таймеров************
-typedef struct
+typedef struct str
 {
 	TIM_TypeDef * regs;
 	
@@ -112,8 +116,22 @@ typedef struct
 	
 	uint8_t 				pwmMax;
 	
-	uint8_t					pwmChannel1;
-	uint8_t					pwmChannel2;
+	volatile int8_t pwmModTim;
+	
+	int8_t					pwmTargetChannel1;
+	int8_t					pwmTargetChannel2;
+	int8_t					pwmTargetChannel3;
+	int8_t					pwmTargetChannel4;
+	
+	int8_t					pwmCurrentChannel1;
+	int8_t					pwmCurrentChannel2;
+	int8_t					pwmCurrentChannel3;
+	int8_t					pwmCurrentChannel4;
+	
+	struct str  		*channel1;
+	struct str   		*channel2;
+	struct str  		*channel3;
+	struct str   		*channel4;
 	
 } timer_struct;
 
@@ -137,7 +155,6 @@ typedef struct
                                    ПРОТОТИПЫ ГЛОБАЛЬНЫХ ФУНКЦИЙ
 **************************************************************************************************/
 void InitTimer( timer_struct * timer );
-void InitTimer3 ( timer_struct * timer );
 
 #ifdef TIMER_1
 	void TIM1_UP_IRQHandler( void );
