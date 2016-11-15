@@ -10,7 +10,7 @@
 
 #include "macros.h"
 #include <time_service.h>
-
+#include "motor.h"
 #include "stdlib.h"
 
 /**************************************************************************************************
@@ -133,6 +133,12 @@ typedef struct str
 	struct str  		*channel3;
 	struct str   		*channel4;
 	
+	bool 						accelerationFlag;
+	bool						switchDirFlagCH1;	
+	bool						switchDirFlagCH2;
+	bool						switchDirFlagCH3;
+	bool						switchDirFlagCH4;
+	
 } timer_struct;
 
 
@@ -155,6 +161,8 @@ typedef struct str
                                    ПРОТОТИПЫ ГЛОБАЛЬНЫХ ФУНКЦИЙ
 **************************************************************************************************/
 void InitTimer( timer_struct * timer );
+void accelerationState ( timer_struct * timer );
+void switchDir ( timer_struct * timer );
 
 #ifdef TIMER_1
 	void TIM1_UP_IRQHandler( void );

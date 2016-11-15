@@ -6,7 +6,7 @@
 #include <stm32f10x.h>
 
 #include "macros.h"
-#include <pwm.h>
+//#include <pwm.h>
 
 
 /**************************************************************************************************
@@ -15,9 +15,6 @@
 
 #define MOTOR1
 
-	#define MOTOR1_TIM_STR	&Timer1
-	#define MOTOR1_TIM_CH		CHANNEL1
-	
 	#define MOTOR1_PORT_F		GPIOB
 	#define MOTOR1_PORT_B		GPIOB
 	#define MOTOR1_PIN_F		GPIO_Pin_2
@@ -28,9 +25,6 @@
 	#define MOTOR1_POWER		0							//	начальная мощность
 	
 #define MOTOR2
-
-	#define MOTOR2_TIM_STR	&Timer1
-	#define MOTOR2_TIM_CH		CHANNEL2
 
 	#define MOTOR2_PORT_F		GPIOB
 	#define MOTOR2_PORT_B		GPIOB
@@ -43,9 +37,6 @@
 	
 #define MOTOR3
 
-	#define MOTOR3_TIM_STR	&Timer4
-	#define MOTOR3_TIM_CH		CHANNEL3
-
 	#define MOTOR3_PORT_F		GPIOB
 	#define MOTOR3_PORT_B		GPIOB
 	#define MOTOR3_PIN_F		GPIO_Pin_10
@@ -56,9 +47,6 @@
 	#define MOTOR3_POWER		0							//	начальная мощность
 	
 #define MOTOR4
-
-	#define MOTOR4_TIM_STR	&Timer4
-	#define MOTOR4_TIM_CH		CHANNEL4
 
 	#define MOTOR4_PORT_F		GPIOB
 	#define MOTOR4_PORT_B		GPIOB
@@ -94,13 +82,6 @@ typedef struct
 	uint8_t 								dir;
 	uint8_t 								on;
 	uint8_t 								power;
-	
-	timer_struct  					*channel1;
-	timer_struct   					*channel2;
-	timer_struct  					*channel3;
-	timer_struct  					*channel4;
-	
-	
 } motor_struct;
 
 
@@ -127,6 +108,7 @@ typedef struct
                                    ПРОТОТИПЫ ГЛОБАЛЬНЫХ ФУНКЦИЙ
 **************************************************************************************************/
 void InitMotor( motor_struct * motor );
+void SetPinMode( motor_struct * motor, uint8_t runmode );
 void RunModeMotor( motor_struct * motor, uint8_t runmode );
 
 

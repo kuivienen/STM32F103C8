@@ -19,23 +19,23 @@ void tim4IrqHandler( timer_struct * timer );
 #ifdef TIMER_1
 	timer_struct Timer1 =
 	{
-		.regs 		= TIMER1_REGS,
+		.regs 							= TIMER1_REGS,
 		
-		.ch1Pin 	= TIMER1_PIN_CH1,
-		.ch1Port 	= TIMER1_PORT_CH1,
+		.ch1Pin 						= TIMER1_PIN_CH1,
+		.ch1Port 						= TIMER1_PORT_CH1,
 
-		.ch2Pin 	= TIMER1_PIN_CH2,
-		.ch2Port 	= TIMER1_PORT_CH2,
+		.ch2Pin 						= TIMER1_PIN_CH2,
+		.ch2Port 						= TIMER1_PORT_CH2,
 		
-		.ch3Pin 	= TIMER1_PIN_CH3,
-		.ch3Port 	= TIMER1_PORT_CH3,
+		.ch3Pin 						= TIMER1_PIN_CH3,
+		.ch3Port 						= TIMER1_PORT_CH3,
 		
-		.ch4Pin 	= TIMER1_PIN_CH4,
-		.ch4Port 	= TIMER1_PORT_CH4,
+		.ch4Pin 						= TIMER1_PIN_CH4,
+		.ch4Port 						= TIMER1_PORT_CH4,
 		
-		.freqSig	=	TIMER1_FREQ_SIG,
+		.freqSig						=	TIMER1_FREQ_SIG,
 		
-		.irq			=	TIMER1_IRQ,
+		.irq								=	TIMER1_IRQ,
 		
 		.pwmTargetChannel1	=	8,
 		.pwmTargetChannel2	=	8,
@@ -43,31 +43,31 @@ void tim4IrqHandler( timer_struct * timer );
 		.pwmCurrentChannel1 = -10,
 		.pwmCurrentChannel2 = -10,
 		
-		.pwmMax				=	(uint32_t)TIMER1_FREQ_SIG/TIMER1_FREQ_PWM,
-		.pwmModTim		=	0,
+		.pwmMax							=	(uint32_t)TIMER1_FREQ_SIG/TIMER1_FREQ_PWM,
+		.pwmModTim					=	0,
 	};
 #endif
 	
 #ifdef TIMER_4
-	timer_struct Timer4 =
+	timer_struct Timer4 	=
 	{
-		.regs 				= TIMER4_REGS,
+		.regs 							= TIMER4_REGS,
 		
-		.ch1Pin 			= TIMER4_PIN_CH1,
-		.ch1Port 			= TIMER4_PORT_CH1,
+		.ch1Pin 						= TIMER4_PIN_CH1,
+		.ch1Port 						= TIMER4_PORT_CH1,
 
-		.ch2Pin 			= TIMER4_PIN_CH2,
-		.ch2Port 			= TIMER4_PORT_CH2,
+		.ch2Pin 						= TIMER4_PIN_CH2,
+		.ch2Port 						= TIMER4_PORT_CH2,
 		
-		.ch3Pin 			= TIMER4_PIN_CH3,
-		.ch3Port 			= TIMER4_PORT_CH3,
+		.ch3Pin 						= TIMER4_PIN_CH3,
+		.ch3Port 						= TIMER4_PORT_CH3,
 		
-		.ch4Pin 			= TIMER4_PIN_CH4,
-		.ch4Port 			= TIMER4_PORT_CH4,
+		.ch4Pin 						= TIMER4_PIN_CH4,
+		.ch4Port 						= TIMER4_PORT_CH4,
 		
-		.freqSig			=	TIMER4_FREQ_SIG,
+		.freqSig						=	TIMER4_FREQ_SIG,
 		
-		.irq					=	TIMER4_IRQ,
+		.irq								=	TIMER4_IRQ,
 		
 		.pwmTargetChannel3	=	8,
 		.pwmTargetChannel4	=	8,
@@ -75,20 +75,25 @@ void tim4IrqHandler( timer_struct * timer );
 		.pwmCurrentChannel3 = -10,
 		.pwmCurrentChannel4 = -10,
 		
-		.pwmMax				=	(uint32_t)TIMER4_FREQ_SIG/TIMER4_FREQ_PWM,
-		.pwmModTim		=	0,
+		.pwmMax							=	(uint32_t)TIMER4_FREQ_SIG/TIMER4_FREQ_PWM,
+		.pwmModTim					=	0,
 	};
 #endif
 	
 #ifdef TIMER_3
 	timer_struct Timer3 =
 	{
-		.regs 			= TIMER3_REGS,
-		.irq				=	TIMER3_IRQ,
-		.channel1		= TIMER3_CH1, 
-		.channel2		= TIMER3_CH2,
-		.channel3		= TIMER3_CH3,
-		.channel4		= TIMER3_CH4,
+		.regs 							= TIMER3_REGS,
+		.irq								=	TIMER3_IRQ,
+		.channel1						= TIMER3_CH1, 
+		.channel2						= TIMER3_CH2,
+		.channel3						= TIMER3_CH3,
+		.channel4						= TIMER3_CH4,
+		.accelerationFlag		=	0,
+		.switchDirFlagCH1			=	0,
+		.switchDirFlagCH2			=	0,
+		.switchDirFlagCH3			=	0,
+		.switchDirFlagCH4			=	0,
 	};
 #endif
 	
@@ -112,15 +117,65 @@ void InitTimer( timer_struct * timer )
 }
 
 /**************************************************************************************************
-Описание:  Устанавливает заполнение ШИМ
+Описание:  Осуществляет увеличение заполнения ШИМ
 Аргументы: Указатель на структуру timer_struct
 Возврат:   Нет
 Замечания: 
 **************************************************************************************************/
 
-void SetFillPwm ( timer_struct * timer )
+void accelerationState ( timer_struct * timer )
 {
+	if ( timer->channel1->pwmCurrentChannel1 > timer->channel1->pwmTargetChannel1 ) --timer->channel1->pwmCurrentChannel1;
+	else if ( timer->channel1->pwmCurrentChannel1 < timer->channel1->pwmTargetChannel1 ) ++timer->channel1->pwmCurrentChannel1;
+	else timer->switchDirFlagCH1 = 1;
 	
+	if ( timer->channel2->pwmCurrentChannel2 > timer->channel2->pwmTargetChannel2 ) --timer->channel2->pwmCurrentChannel2;
+	else if ( timer->channel2->pwmCurrentChannel2 < timer->channel2->pwmTargetChannel2 ) ++timer->channel2->pwmCurrentChannel2;
+	else timer->switchDirFlagCH2 = 1;
+	
+	if ( timer->channel3->pwmCurrentChannel3 > timer->channel3->pwmTargetChannel3 ) --timer->channel3->pwmCurrentChannel3;
+	else if ( timer->channel3->pwmCurrentChannel3 < timer->channel3->pwmTargetChannel3 ) ++timer->channel3->pwmCurrentChannel3;
+	else timer->switchDirFlagCH3 = 1;
+	
+	if ( timer->channel4->pwmCurrentChannel4 > timer->channel4->pwmTargetChannel4 ) --timer->channel4->pwmCurrentChannel4;
+	else if ( timer->channel4->pwmCurrentChannel4 < timer->channel4->pwmTargetChannel4 ) ++timer->channel4->pwmCurrentChannel4;
+	else timer->switchDirFlagCH4 = 1;
+	
+	timer->accelerationFlag = 0;
+}
+
+/**************************************************************************************************
+Описание:  Осуществляет переключение каналов управления
+Аргументы: Указатель на структуру timer_struct
+Возврат:   Нет
+Замечания: 
+**************************************************************************************************/
+
+void switchDir ( timer_struct * timer )
+{
+	if ( timer->switchDirFlagCH1) {
+		if ( timer->channel1->pwmTargetChannel1 > 0 ) SetPinMode ( &Motor1, FORWARD );
+		else if ( timer->channel1->pwmTargetChannel1 < 0 ) SetPinMode ( &Motor1, BACKWARD );
+		else SetPinMode ( &Motor1, OFF );
+	}
+	
+	if ( timer->switchDirFlagCH2) {
+		if ( timer->channel2->pwmTargetChannel2 > 0 ) SetPinMode ( &Motor2, FORWARD );
+		else if ( timer->channel2->pwmTargetChannel2 < 0 ) SetPinMode ( &Motor2, BACKWARD );
+		else SetPinMode ( &Motor2, OFF );
+	}
+	
+	if ( timer->switchDirFlagCH3) {
+		if ( timer->channel3->pwmTargetChannel3 > 0 ) SetPinMode ( &Motor3, FORWARD );
+		else if ( timer->channel3->pwmTargetChannel3 < 0 ) SetPinMode ( &Motor3, BACKWARD );
+		else SetPinMode ( &Motor3, OFF );
+	}
+	
+	if ( timer->switchDirFlagCH4) {
+		if ( timer->channel4->pwmTargetChannel4 > 0 ) SetPinMode ( &Motor4, FORWARD );
+		else if ( timer->channel4->pwmTargetChannel4 < 0 ) SetPinMode ( &Motor4, BACKWARD );
+		else SetPinMode ( &Motor4, OFF );
+	}
 }
 
 /**************************************************************************************************
@@ -416,17 +471,6 @@ void TIM3_IRQHandler( void )
 void tim3IrqHandler( timer_struct * timer ){
 	if (TIM_GetITStatus(timer->regs, TIM_IT_Update)){
 		TIM_ClearITPendingBit(timer->regs, TIM_IT_Update);
-		
-		if ( timer->channel1->pwmCurrentChannel1 > timer->channel1->pwmTargetChannel1 ) --timer->channel1->pwmCurrentChannel1;
-		else if ( timer->channel1->pwmCurrentChannel1 < timer->channel1->pwmTargetChannel1 ) ++timer->channel1->pwmCurrentChannel1;
-		
-		if ( timer->channel2->pwmCurrentChannel2 > timer->channel2->pwmTargetChannel2 ) --timer->channel2->pwmCurrentChannel2;
-		else if ( timer->channel2->pwmCurrentChannel2 < timer->channel2->pwmTargetChannel2 ) ++timer->channel2->pwmCurrentChannel2;
-		
-		if ( timer->channel3->pwmCurrentChannel3 > timer->channel3->pwmTargetChannel3 ) --timer->channel3->pwmCurrentChannel3;
-		else if ( timer->channel3->pwmCurrentChannel3 < timer->channel3->pwmTargetChannel3 ) ++timer->channel3->pwmCurrentChannel3;
-		
-		if ( timer->channel4->pwmCurrentChannel4 > timer->channel4->pwmTargetChannel4 ) --timer->channel4->pwmCurrentChannel4;
-		else if ( timer->channel4->pwmCurrentChannel4 < timer->channel4->pwmTargetChannel4 ) ++timer->channel4->pwmCurrentChannel4;
+		timer->accelerationFlag = 1;
 	}
 }

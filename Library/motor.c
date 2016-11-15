@@ -23,7 +23,6 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.dir				= MOTOR1_DIR,
 		.on					= MOTOR1_ON,
 		.power			= MOTOR1_POWER,	
-		.channel1		=	MOTOR1_TIM_STR,
 	};
 #endif
 	
@@ -40,7 +39,6 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.dir				= MOTOR2_DIR,
 		.on					= MOTOR2_ON,
 		.power			= MOTOR2_POWER,	
-		.channel2		=	MOTOR2_TIM_STR,
 	};
 #endif
 	
@@ -57,7 +55,6 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.dir				= MOTOR3_DIR,
 		.on					= MOTOR3_ON,
 		.power			= MOTOR3_POWER,	
-		.channel3		=	MOTOR3_TIM_STR,
 	};
 #endif	
 	
@@ -74,7 +71,6 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.dir				= MOTOR4_DIR,
 		.on					= MOTOR4_ON,
 		.power			= MOTOR4_POWER,	
-		.channel4		=	MOTOR4_TIM_STR,
 	};
 #endif
 
@@ -142,8 +138,7 @@ void RunModeMotor( motor_struct * motor, uint8_t runmode ){
 				SetPinMode( motor, runmode );
 				break;
 		default:
-				FAIL_ASSERT();
-		
+				FAIL_ASSERT();	
 	}
 }
 

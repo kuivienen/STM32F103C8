@@ -18,6 +18,6 @@
 .\objects\main.o: .\Library\self_control.h
 .\objects\main.o: .\Library\uart.h
 .\objects\main.o: .\Library\pwm.h
+.\objects\main.o: .\Library\motor.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: .\Library\buttons.h
-.\objects\main.o: .\Library\motor.h
