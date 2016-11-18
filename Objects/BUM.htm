@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\BUM.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\BUM.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Nov 15 14:45:55 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Nov 17 13:40:19 2016
 <BR><P>
 <H3>Maximum Stack Usage =         72 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -425,8 +425,7 @@ Global Symbols
 <P><STRONG><a name="[43]"></a>main</STRONG> (Thumb, 120 bytes, Stack size 0 bytes, main.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = main &rArr; InitTimer &rArr; initTimParams &rArr; TIM_OC4Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchDir
-<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;accelerationState
+<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchDir
 <LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScanChangeButtons
 <LI><a href="#[56]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ScanButtons
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
@@ -435,6 +434,7 @@ Global Symbols
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitTimeService
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitMotor
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitButtons
+<LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;AccelerationState
 </UL>
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
@@ -1337,17 +1337,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[58]"></a>accelerationState</STRONG> (Thumb, 304 bytes, Stack size 0 bytes, pwm.o(.text))
+<P><STRONG><a name="[58]"></a>AccelerationState</STRONG> (Thumb, 378 bytes, Stack size 0 bytes, pwm.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[59]"></a>switchDir</STRONG> (Thumb, 260 bytes, Stack size 8 bytes, pwm.o(.text))
-<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = switchDir &rArr; SetPinMode &rArr; GPIO_SetBits
+<P><STRONG><a name="[59]"></a>SwitchDir</STRONG> (Thumb, 276 bytes, Stack size 8 bytes, pwm.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SwitchDir &rArr; SetPinMode &rArr; GPIO_SetBits
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
+
+<P><STRONG><a name="[121]"></a>SetPwmTarget</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
+
+<P><STRONG><a name="[122]"></a>switchDirFlag</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
 
 <P><STRONG><a name="[e9]"></a>enableChannel</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
@@ -1359,7 +1363,7 @@ Global Symbols
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
 </UL>
 
-<P><STRONG><a name="[e8]"></a>tim1IrqHandler</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, pwm.o(.text))
+<P><STRONG><a name="[e8]"></a>tim1IrqHandler</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tim1IrqHandler &rArr; TIM_ClearITPendingBit
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableChannel
@@ -1433,7 +1437,7 @@ Global Symbols
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunModeMotor
-<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;switchDir
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchDir
 </UL>
 
 <P><STRONG><a name="[ee]"></a>RunModeMotor</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, motor.o(.text))
@@ -1481,11 +1485,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[121]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[123]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[122]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[124]"></a>__rt_heap_escrow$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
-<P><STRONG><a name="[123]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
+<P><STRONG><a name="[125]"></a>__rt_heap_expand$2region</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
 
 <P><STRONG><a name="[3f]"></a>__user_setup_stackheap</STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -1506,23 +1510,23 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
-<P><STRONG><a name="[124]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[126]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[f1]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
-<P><STRONG><a name="[125]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
+<P><STRONG><a name="[127]"></a>__user_perthread_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
 <P><STRONG><a name="[48]"></a>_sys_exit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_exit
 </UL>
 
-<P><STRONG><a name="[126]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[128]"></a>__I$use$semihosting</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[127]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
+<P><STRONG><a name="[129]"></a>__use_no_semihosting_swi</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)
 
-<P><STRONG><a name="[128]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
+<P><STRONG><a name="[12a]"></a>__semihosting_library_function</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, indicate_semi.o(.text), UNUSED)
 <P>
 <H3>
 Local Symbols

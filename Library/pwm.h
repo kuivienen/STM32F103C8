@@ -157,12 +157,17 @@ typedef struct str
 	extern timer_struct Timer3;
 #endif
 
+//	количество каналов управления
+extern enum _Channel {FIRST, SECOND, THIRD, FOURS} channel;
+
 /**************************************************************************************************
                                    ПРОТОТИПЫ ГЛОБАЛЬНЫХ ФУНКЦИЙ
 **************************************************************************************************/
 void InitTimer( timer_struct * timer );
-void accelerationState ( timer_struct * timer );
-void switchDir ( timer_struct * timer );
+void AccelerationState ( timer_struct * timer );
+void SwitchDir ( timer_struct * timer );
+void SetPwmTarget ( timer_struct * timer, enum _Channel channel, int8_t data );
+void switchDirFlag ( timer_struct * timer, enum _Channel channel );
 
 #ifdef TIMER_1
 	void TIM1_UP_IRQHandler( void );

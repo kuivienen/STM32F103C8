@@ -7,6 +7,8 @@
 ".\objects\stm32f10x_rcc.o"
 ".\objects\stm32f10x_gpio.o"
 ".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_dma.o"
 ".\objects\time_service.o"
 ".\objects\self_control.o"
 ".\objects\pwm.o"

@@ -86,8 +86,8 @@ int main( void )
 	{
 		ScanButtons( &Buttons );
 		ScanChangeButtons( &Buttons );
-		accelerationState ( &Timer3 );
-		switchDir ( &Timer3 );
+		AccelerationState ( &Timer3 );
+		SwitchDir ( &Timer3 );
 	//	IWDG_ReloadCounter();
 		//Blink();
 	//	ProcessLinkSlave();

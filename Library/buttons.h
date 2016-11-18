@@ -6,7 +6,7 @@
 #include <stm32f10x.h>
 #include "time_service.h"
 #include <stdbool.h>
-#include "motor.h"
+#include "pwm.h"
 
 /**************************************************************************************************
                                           НАСТРОЙКИ КНОПОК

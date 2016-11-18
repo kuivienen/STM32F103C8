@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: µVision V5.17.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: sergeyf Microsoft, Microsoft, LIC=S5ITG-VJQ45-BX6UY-IFKXS-NF08B-1ZIEZ
+License Information: ser Microsoft, Microsoft, LIC=7YKKP-MM88G-66FQS-L42HG-FU8XZ-J84WQ
  
 Tool Versions:
 Toolchain:       MDK-ARM Professional  Version: 5.17
@@ -22,35 +22,59 @@ Dialog DLL:      TARMSTM.DLL V1.64.0.0
  
 <h2>Project:</h2>
 E:\GitHub\BUM\STM32F103C8\BUM.uvprojx
-Project File Date:  11/01/2016
+Project File Date:  11/17/2016
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Rebuild target 'BUM'
 assembling startup_stm32f10x_md.s...
-compiling core_cm3.c...
 compiling main.c...
 compiling system_stm32f10x.c...
+compiling core_cm3.c...
 compiling misc.c...
 compiling stm32f10x_rcc.c...
 compiling stm32f10x_gpio.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_adc.c...
 compiling time_service.c...
 compiling self_control.c...
-compiling pwm.c...
 compiling stm32f10x_tim.c...
 compiling motor.c...
+compiling pwm.c...
 compiling buttons.c...
-linking...
-Program Size: Code=22924 RO-data=268 RW-data=428 ZI-data=1636  
-FromELF: creating hex file...
-".\Objects\BUM.axf" - 0 Error(s), 0 Warning(s).
+compiling adc.c...
+Library\adc.c(79): error:  #136: struct "<unnamed>" has no field "temp"
+  	uint8_t count = (adc->temp) ? (adc->countChannel - 1) : adc->countChannel;
+Library\adc.c(79): error:  #136: struct "<unnamed>" has no field "countChannel"
+  	uint8_t count = (adc->temp) ? (adc->countChannel - 1) : adc->countChannel;
+Library\adc.c(79): error:  #136: struct "<unnamed>" has no field "countChannel"
+  	uint8_t count = (adc->temp) ? (adc->countChannel - 1) : adc->countChannel;
+Library\adc.c(84): error:  #142: expression must have pointer-to-object type
+  		GPIO_InitStructure.GPIO_Pin   = adc->pin[i];
+Library\adc.c(85): error:  #167: argument of type "GPIO_TypeDef" is incompatible with parameter of type "GPIO_TypeDef *"
+  		GPIO_Init(adc->port[i], &GPIO_InitStructure);
+Library\adc.c(104): error:  #136: struct "<unnamed>" has no field "countChannel"
+  	ADC_InitStructure.ADC_NbrOfChannel = adc->countChannel;
+Library\adc.c(108): error:  #136: struct "<unnamed>" has no field "temp"
+  	if (adc->temp)
+Library\adc.c(113): error:  #136: struct "<unnamed>" has no field "countChannel"
+  	for (int i = 0; i < adc->countChannel; ++i)
+Library\adc.c(115): error:  #142: expression must have pointer-to-object type
+  		ADC_RegularChannelConfig(adc->regs, adc->usingChannel[i], adc->sequenceChannel[i], adc->sampleTime);
+Library\adc.c(115): error:  #136: struct "<unnamed>" has no field "sequenceChannel"
+  		ADC_RegularChannelConfig(adc->regs, adc->usingChannel[i], adc->sequenceChannel[i], adc->sampleTime);
+Library\adc.c(144): error:  #136: struct "<unnamed>" has no field "temp"
+  	if (adc->temp)
+Library\adc.c: 0 warnings, 11 errors
+".\Objects\BUM.axf" - 11 Error(s), 0 Warning(s).
 
 <h2>Collection of Component include folders:</h2>
   E:\GitHub\BUM\STM32F103C8\RTE
-  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.0.0\Device\Include
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
 
 <h2>Collection of Component Files used:</h2>
-Build Time Elapsed:  00:00:06
+Target not created.
+Build Time Elapsed:  00:00:05
 </pre>
 </body>
 </html>

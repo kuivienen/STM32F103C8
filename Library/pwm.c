@@ -123,25 +123,34 @@ void InitTimer( timer_struct * timer )
 Замечания: 
 **************************************************************************************************/
 
-void accelerationState ( timer_struct * timer )
+void AccelerationState ( timer_struct * timer )
 {
-	if ( timer->channel1->pwmCurrentChannel1 > timer->channel1->pwmTargetChannel1 ) --timer->channel1->pwmCurrentChannel1;
-	else if ( timer->channel1->pwmCurrentChannel1 < timer->channel1->pwmTargetChannel1 ) ++timer->channel1->pwmCurrentChannel1;
-	else timer->switchDirFlagCH1 = 1;
-	
-	if ( timer->channel2->pwmCurrentChannel2 > timer->channel2->pwmTargetChannel2 ) --timer->channel2->pwmCurrentChannel2;
-	else if ( timer->channel2->pwmCurrentChannel2 < timer->channel2->pwmTargetChannel2 ) ++timer->channel2->pwmCurrentChannel2;
-	else timer->switchDirFlagCH2 = 1;
-	
-	if ( timer->channel3->pwmCurrentChannel3 > timer->channel3->pwmTargetChannel3 ) --timer->channel3->pwmCurrentChannel3;
-	else if ( timer->channel3->pwmCurrentChannel3 < timer->channel3->pwmTargetChannel3 ) ++timer->channel3->pwmCurrentChannel3;
-	else timer->switchDirFlagCH3 = 1;
-	
-	if ( timer->channel4->pwmCurrentChannel4 > timer->channel4->pwmTargetChannel4 ) --timer->channel4->pwmCurrentChannel4;
-	else if ( timer->channel4->pwmCurrentChannel4 < timer->channel4->pwmTargetChannel4 ) ++timer->channel4->pwmCurrentChannel4;
-	else timer->switchDirFlagCH4 = 1;
-	
-	timer->accelerationFlag = 0;
+	if ( timer->accelerationFlag ) {
+		if ( timer->channel1->pwmCurrentChannel1 != timer->channel1->pwmTargetChannel1 ) {
+			if ( timer->channel1->pwmCurrentChannel1 > timer->channel1->pwmTargetChannel1 ) --timer->channel1->pwmCurrentChannel1;
+			else if ( timer->channel1->pwmCurrentChannel1 < timer->channel1->pwmTargetChannel1 ) ++timer->channel1->pwmCurrentChannel1;
+			else timer->switchDirFlagCH1 = 1;
+		}
+		
+		if ( timer->channel2->pwmCurrentChannel2 != timer->channel2->pwmTargetChannel2 ) {
+			if ( timer->channel2->pwmCurrentChannel2 > timer->channel2->pwmTargetChannel2 ) --timer->channel2->pwmCurrentChannel2;
+			else if ( timer->channel2->pwmCurrentChannel2 < timer->channel2->pwmTargetChannel2 ) ++timer->channel2->pwmCurrentChannel2;
+			else timer->switchDirFlagCH2 = 1;
+		}
+		
+		if ( timer->channel3->pwmCurrentChannel3 != timer->channel3->pwmTargetChannel3 ) {
+			if ( timer->channel3->pwmCurrentChannel3 > timer->channel3->pwmTargetChannel3 ) --timer->channel3->pwmCurrentChannel3;
+			else if ( timer->channel3->pwmCurrentChannel3 < timer->channel3->pwmTargetChannel3 ) ++timer->channel3->pwmCurrentChannel3;
+			else timer->switchDirFlagCH3 = 1;
+		}
+		
+		if ( timer->channel4->pwmCurrentChannel4 != timer->channel4->pwmTargetChannel4 ) {
+			if ( timer->channel4->pwmCurrentChannel4 > timer->channel4->pwmTargetChannel4 ) --timer->channel4->pwmCurrentChannel4;
+			else if ( timer->channel4->pwmCurrentChannel4 < timer->channel4->pwmTargetChannel4 ) ++timer->channel4->pwmCurrentChannel4;
+			else timer->switchDirFlagCH4 = 1;
+		}	
+		timer->accelerationFlag = 0;
+	}
 }
 
 /**************************************************************************************************
@@ -151,39 +160,93 @@ void accelerationState ( timer_struct * timer )
 Замечания: 
 **************************************************************************************************/
 
-void switchDir ( timer_struct * timer )
+void SwitchDir ( timer_struct * timer )
 {
-	if ( timer->switchDirFlagCH1) {
+	if ( timer->switchDirFlagCH1 ) {
 		if ( timer->channel1->pwmTargetChannel1 > 0 ) SetPinMode ( &Motor1, FORWARD );
 		else if ( timer->channel1->pwmTargetChannel1 < 0 ) SetPinMode ( &Motor1, BACKWARD );
 		else SetPinMode ( &Motor1, OFF );
+		timer->switchDirFlagCH1 = 0;
 	}
 	
 	if ( timer->switchDirFlagCH2) {
 		if ( timer->channel2->pwmTargetChannel2 > 0 ) SetPinMode ( &Motor2, FORWARD );
 		else if ( timer->channel2->pwmTargetChannel2 < 0 ) SetPinMode ( &Motor2, BACKWARD );
 		else SetPinMode ( &Motor2, OFF );
+		timer->switchDirFlagCH2 = 0;
 	}
 	
 	if ( timer->switchDirFlagCH3) {
 		if ( timer->channel3->pwmTargetChannel3 > 0 ) SetPinMode ( &Motor3, FORWARD );
 		else if ( timer->channel3->pwmTargetChannel3 < 0 ) SetPinMode ( &Motor3, BACKWARD );
 		else SetPinMode ( &Motor3, OFF );
+		timer->switchDirFlagCH3 = 0;
 	}
 	
 	if ( timer->switchDirFlagCH4) {
 		if ( timer->channel4->pwmTargetChannel4 > 0 ) SetPinMode ( &Motor4, FORWARD );
 		else if ( timer->channel4->pwmTargetChannel4 < 0 ) SetPinMode ( &Motor4, BACKWARD );
 		else SetPinMode ( &Motor4, OFF );
+		timer->switchDirFlagCH4 = 0;
+	}
+}
+
+/**************************************************************************************************
+Описание:  Осуществляет установку заполнения ШИМ
+Аргументы: Указатель на структуру timer_struct
+Возврат:   Нет
+Замечания: 
+**************************************************************************************************/
+
+void SetPwmTarget ( timer_struct * timer, enum _Channel channel, int8_t data )
+{
+	switch (channel){
+		case FIRST:		
+			timer->channel1->pwmTargetChannel1 = data;
+			break;
+		case SECOND:		
+			timer->channel2->pwmTargetChannel2 = data;
+			break;
+		case THIRD:		
+			timer->channel3->pwmTargetChannel3 = data;
+			break;
+		case FOURS:		
+			timer->channel4->pwmTargetChannel4 = data;
+			break;
+		default:
+			FAIL_ASSERT();
+	}
+}
+
+/**************************************************************************************************
+Описание:  Устанавливает флаг переключения состояния каналов управления
+Аргументы: Указатель на структуру timer_struct
+Возврат:   Нет
+Замечания: 
+**************************************************************************************************/
+void switchDirFlag ( timer_struct * timer, enum _Channel channel )
+{
+	switch (channel){
+			case FIRST:		
+				timer->switchDirFlagCH1 = 1;
+				break;
+			case SECOND:		
+				timer->switchDirFlagCH2 = 1;
+				break;
+			case THIRD:		
+				timer->switchDirFlagCH3 = 1;
+				break;
+			case FOURS:		
+				timer->switchDirFlagCH4 = 1;
+				break;
+			default:
+				FAIL_ASSERT();
 	}
 }
 
 /**************************************************************************************************
                                        ЛОКАЛЬНЫЕ ПЕРЕМЕННЫЕ
 **************************************************************************************************/
-
-//	количество каналов управления
-enum _Channel {FIRST, SECOND, THIRD, FOURS} channel;
 
 
 /**************************************************************************************************
@@ -406,8 +469,8 @@ void tim1IrqHandler( timer_struct * timer ) {
 	++timer->pwmModTim;
 	
 	if (timer->pwmModTim == timer->pwmMax*2) {
-		enableChannel( timer, FIRST );
-		enableChannel( timer, SECOND );
+		if ( timer->pwmCurrentChannel1 != 0 ) enableChannel( timer, FIRST );
+		if ( timer->pwmCurrentChannel2 != 0 ) enableChannel( timer, SECOND );
 		timer->pwmModTim = 0;
 	}
 	
