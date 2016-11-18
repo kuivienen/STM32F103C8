@@ -11,6 +11,8 @@
 .\objects\buttons.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_tim.h
+.\objects\buttons.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\buttons.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\buttons.o: .\SPL\inc\misc.h
 .\objects\buttons.o: .\Services\time_service.h
 .\objects\buttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h

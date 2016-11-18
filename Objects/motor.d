@@ -11,5 +11,7 @@
 .\objects\motor.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_tim.h
+.\objects\motor.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\motor.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\motor.o: .\SPL\inc\misc.h
 .\objects\motor.o: Library\macros.h

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __UART__
+
+#define __UART__
 
 
 #include <stdint.h>
@@ -7,8 +9,7 @@
 #include <macros.h>
 
 #include <time_service.h>
-
-//#include <radio_link.h>
+#include <stm32f10x_conf.h>
 
 /**************************************************************************************************
                                           Õ¿—“–Œ… »
@@ -30,20 +31,20 @@
 
 
  #define UART_2
- 	#define UART2_REGS USART2
- 	#define UART2_IRQN USART2_IRQn
- 	#define UART2_RX_PIN GPIO_Pin_3
- 	#define UART2_RX_PORT GPIOA
- 	#define UART2_TX_PIN GPIO_Pin_2
- 	#define UART2_TX_PORT GPIOA
-	#define UART2_RTS_PIN GPIO_Pin_1
- 	#define UART2_RTS_PORT GPIOA
- 	#define UART2_BAUDRATE 9600  //921600
- 	#define UART2_PREEMPTION_PRIORITY 0
- 	#define UART2_SUB_PRIORITY 3
- 	#define UART2_TX_CALLBACK TxCallbackDefault
- 	#define UART2_RX_OVR_HANDLER RxOvrHandlerDefault
-	#define UART2_RX_CALLBACK RxCallbackDefault
+ 	#define UART2_REGS 									USART2
+ 	#define UART2_IRQN 									USART2_IRQn
+ 	#define UART2_RX_PIN 								GPIO_Pin_3
+ 	#define UART2_RX_PORT 							GPIOA
+ 	#define UART2_TX_PIN 								GPIO_Pin_2
+ 	#define UART2_TX_PORT 							GPIOA
+	#define UART2_RTS_PIN 							GPIO_Pin_1
+ 	#define UART2_RTS_PORT 							GPIOA
+ 	#define UART2_BAUDRATE 							9600  
+ 	#define UART2_PREEMPTION_PRIORITY 	0
+ 	#define UART2_SUB_PRIORITY 					3
+ 	#define UART2_TX_CALLBACK 					TxCallbackDefault
+ 	#define UART2_RX_OVR_HANDLER 				RxOvrHandlerDefault
+	#define UART2_RX_CALLBACK 					RxCallbackDefault
 	
 //#define UART_3
 //	#define UART3_REGS USART3
@@ -183,3 +184,4 @@ void RxCallbackDefault(void);
 	void UART5_IRQHandler( void );
 #endif
 
+#endif	/*	__UART__	*/

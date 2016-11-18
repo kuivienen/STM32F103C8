@@ -11,4 +11,6 @@
 .\objects\misc.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\misc.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\misc.o: .\SPL\inc\stm32f10x_tim.h
+.\objects\misc.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\misc.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\misc.o: .\SPL\inc\misc.h

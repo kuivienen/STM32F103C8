@@ -6,11 +6,12 @@
 .\objects\common.o: .\CMSIS\core_cm3.h
 .\objects\common.o: .\CMSIS\system_stm32f10x.h
 .\objects\common.o: .\CMSIS\stm32f10x_conf.h
-.\objects\common.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\common.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\common.o: .\CMSIS\stm32f10x.h
-.\objects\common.o: .\SPL\inc\stm32f10x_exti.h
+.\objects\common.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\common.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\common.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\common.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\common.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\common.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\common.o: .\SPL\inc\misc.h

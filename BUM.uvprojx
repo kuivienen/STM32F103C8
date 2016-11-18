@@ -492,14 +492,14 @@
               <FilePath>.\SPL\src\stm32f10x_tim.c</FilePath>
             </File>
             <File>
-              <FileName>stm32f10x_adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\SPL\src\stm32f10x_adc.c</FilePath>
-            </File>
-            <File>
               <FileName>stm32f10x_dma.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\SPL\src\stm32f10x_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\SPL\src\stm32f10x_usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -535,6 +535,51 @@
               <FileName>buttons.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Library\buttons.c</FilePath>
+            </File>
+            <File>
+              <FileName>uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>crc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\crc.c</FilePath>
+            </File>
+            <File>
+              <FileName>common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\common.c</FilePath>
+            </File>
+            <File>
+              <FileName>link_slave.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\link_slave.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>MilliG</GroupName>
+          <Files>
+            <File>
+              <FileName>mg_canal_level.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MilliG\mg_canal_level.c</FilePath>
+            </File>
+            <File>
+              <FileName>mg_common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MilliG\mg_common.c</FilePath>
+            </File>
+            <File>
+              <FileName>mg_data_level.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MilliG\mg_data_level.c</FilePath>
+            </File>
+            <File>
+              <FileName>mg_regs.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\MilliG\mg_regs.c</FilePath>
             </File>
           </Files>
         </Group>

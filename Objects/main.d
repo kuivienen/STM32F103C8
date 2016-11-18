@@ -11,6 +11,8 @@
 .\objects\main.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\main.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\main.o: .\SPL\inc\stm32f10x_tim.h
+.\objects\main.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\main.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\main.o: .\SPL\inc\misc.h
 .\objects\main.o: .\Services\time_service.h
 .\objects\main.o: .\Library\macros.h

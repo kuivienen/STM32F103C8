@@ -6,13 +6,14 @@
 .\objects\mg_common.o: .\CMSIS\core_cm3.h
 .\objects\mg_common.o: .\CMSIS\system_stm32f10x.h
 .\objects\mg_common.o: .\CMSIS\stm32f10x_conf.h
-.\objects\mg_common.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\mg_common.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\mg_common.o: .\CMSIS\stm32f10x.h
-.\objects\mg_common.o: .\SPL\inc\stm32f10x_exti.h
+.\objects\mg_common.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\mg_common.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\mg_common.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\mg_common.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\mg_common.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\mg_common.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\mg_common.o: .\SPL\inc\misc.h
 .\objects\mg_common.o: .\Services\time_service.h
 .\objects\mg_common.o: .\Library\macros.h

@@ -6,13 +6,14 @@
 .\objects\link_slave.o: .\CMSIS\core_cm3.h
 .\objects\link_slave.o: .\CMSIS\system_stm32f10x.h
 .\objects\link_slave.o: .\CMSIS\stm32f10x_conf.h
-.\objects\link_slave.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\link_slave.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\link_slave.o: .\CMSIS\stm32f10x.h
-.\objects\link_slave.o: .\SPL\inc\stm32f10x_exti.h
+.\objects\link_slave.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_usart.h
+.\objects\link_slave.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\link_slave.o: .\SPL\inc\misc.h
 .\objects\link_slave.o: .\MilliG\milli_ganjubus.h
 .\objects\link_slave.o: .\MilliG\ganjubus_common.h
