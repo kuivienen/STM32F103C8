@@ -5,9 +5,9 @@
 
 **************************************************************************************************/
 
-#ifndef GANJUBUS_COMMON_H_
-#define GANJUBUS_COMMON_H_
-#pragma once
+#ifndef __GANJUBUS_COMMON_H__
+#define __GANJUBUS_COMMON_H__
+
 
 
 #include <stdint.h>
@@ -98,4 +98,5 @@ static inline uint8_t G_GetAckCode(uint8_t gByte)
 	return gByte & 0xF0;
 }
 
-#endif
+#endif		/* __GANJUBUS_COMMON_H__ */
+

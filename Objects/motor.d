@@ -9,6 +9,7 @@
 .\objects\motor.o: .\CMSIS\stm32f10x_conf.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\motor.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\motor.o: .\SPL\inc\stm32f10x_usart.h

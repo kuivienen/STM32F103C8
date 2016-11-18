@@ -7,10 +7,12 @@
 #include <time_service.h>
 
 #include <self_control.h>
-#include "uart.h"
+#include <uart.h>
 
-#include "pwm.h"
-#include "buttons.h"
+#include <pwm.h>
+#include <buttons.h>
+
+#include <link_slave.h>
 
 
 void Blink(void)
@@ -58,13 +60,14 @@ int main( void )
 	NVIC_PriorityGroupConfig( NVIC_PriorityGroup_0 );
 
 	InitTimeService();
-
-
+	
+	InitLinkSlave(&Uart2);
+	
 	InitTimer( &Timer1 );
 	InitTimer( &Timer4 );
 	InitTimer( &Timer3 );
 	
-	InitButtons( &Buttons );
+	//InitButtons( &Buttons );
 	
 	InitMotor( &Motor1 );
 	InitMotor( &Motor2 );
@@ -78,7 +81,7 @@ int main( void )
 
 	//OutputMCO();
 	//	Delay(5000);
-	//InitIwdg();
+	InitIwdg();
 	//Blink();
 	//	InitOpticalSensor(&Spi1Struct);
 	//	InitPinOUT();
@@ -88,10 +91,11 @@ int main( void )
 		ScanChangeButtons( &Buttons );
 		AccelerationState ( &Timer3 );
 		SwitchDir ( &Timer3 );
-	//	IWDG_ReloadCounter();
+		
+		IWDG_ReloadCounter();
 		//Blink();
-	//	ProcessLinkSlave();
-	//	SelfControlFsm();		
+		ProcessLinkSlave();
+		SelfControlFsm();		
 	}
 }
 

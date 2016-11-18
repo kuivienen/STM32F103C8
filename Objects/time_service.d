@@ -10,6 +10,7 @@
 .\objects\time_service.o: .\CMSIS\stm32f10x.h
 .\objects\time_service.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\time_service.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\time_service.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\time_service.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\time_service.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\time_service.o: .\SPL\inc\stm32f10x_usart.h

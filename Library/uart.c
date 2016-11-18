@@ -291,7 +291,7 @@ void SendDataToUart( uart_struct * uart, uint8_t *buffer, uint16_t size )
 {
 	uart->txBufPtr = buffer;
 	uart->txCounter = size - 1;
-	GPIO_SetBits(uart->rtsPort, uart->rtsPin);
+//	GPIO_SetBits(uart->rtsPort, uart->rtsPin);
 	USART_SendData( uart->regs, *buffer );
 }
 
@@ -426,14 +426,6 @@ static void initUartGpio( uart_struct * uart )
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	
 	GPIO_Init( uart->txPort , &GPIO_InitStructure );
-	
-		//инициализация RTS
-	GPIO_InitStructure.GPIO_Pin = uart->rtsPin;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	
-	GPIO_Init( uart->rtsPort , &GPIO_InitStructure );
-	GPIO_ResetBits(uart->rtsPort, uart->rtsPin);
 }
 
 
@@ -526,8 +518,8 @@ static void uartIrqHandler( uart_struct * uart )
  		}
  		else
  		{
- 			UartDelay(1000);
-			GPIO_ResetBits(uart->rtsPort, uart->rtsPin);
+ 			//UartDelay(1000);
+		//	GPIO_ResetBits(uart->rtsPort, uart->rtsPin);
 			uart->txCallback();
  		}
 		USART_ClearFlag( uart->regs, USART_FLAG_TC );		

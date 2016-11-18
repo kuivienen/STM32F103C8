@@ -4,7 +4,9 @@
  Заголовочный файл модуля COMMON
 **************************************************************************************************/
 
-#pragma once
+#ifndef __COMMON__
+
+#define __COMMON__
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -117,3 +119,4 @@ static inline int16_t RescaleInt8ToInt16(int8_t value)
 	return (int16_t)(value * INT16_MAX / INT8_MAX);
 }
 
+#endif	/*	__COMMON__	*/

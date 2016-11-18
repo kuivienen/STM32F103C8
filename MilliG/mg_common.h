@@ -5,7 +5,9 @@
 
 **************************************************************************************************/
 
-#pragma once
+#ifndef __MG_COMMON__
+
+#define __MG_COMMON__
 
 
 #include <stdint.h>
@@ -98,3 +100,6 @@ void MG_SetOutputDevAdr(mg_output * msg, uint8_t devAdr);
 uint8_t * MG_GetOutBufPtr(mg_output * msg);
 uint8_t MG_GetOutBufSize(mg_output * msg);
 uint8_t MG_GetOutputDevAdr(mg_output * msg);
+
+#endif		/* __MG_COMMON__ */
+

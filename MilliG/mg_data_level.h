@@ -5,7 +5,9 @@
 
 **************************************************************************************************/
 
-#pragma once
+#ifndef __MG_DATA_LEVEL__
+
+#define __MG_DATA_LEVEL__
 
 
 #include <stdint.h>
@@ -25,3 +27,6 @@
 
 void MG_ProcessRequest(mg_input * inMsg, mg_output * outMsg);
 ok_fail MG_ProcessAnswer(mg_input * inMsg, mg_output * outMsg);
+
+#endif		/* __MG_DATA_LEVEL__ */
+

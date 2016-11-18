@@ -5,7 +5,9 @@
 
 **************************************************************************************************/
 
-#pragma once
+#ifndef __MG_CANAL_LEVEL__
+
+#define __MG_CANAL_LEVEL__
 
 
 #include <stdint.h>
@@ -27,3 +29,5 @@
 done_inprogress MG_ComposeMsg(uint8_t dataByte, mg_input * msg);
 void MG_WrapMsg(mg_output * msg);
 bool MG_IsAnsNeeded(mg_input * msg);
+
+#endif		/* MG_CANAL_LEVEL */

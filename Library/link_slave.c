@@ -12,7 +12,7 @@
 /**************************************************************************************************
                                             ŒÕ—“¿Õ“€
 **************************************************************************************************/
-#warning Setup connection delay for debug
+//#warning Setup connection delay for debug
 #define MAX_CONNECTION_DELAY 750
 #define DEVICE_ADDRESS 0x01
 
@@ -24,9 +24,9 @@
 
 static void onMsgTransmited(void);
 static void lostLinkHandler(void);
-static void initGpio(void);
-static void enableTransmit(void);
-static void disableTransmit(void);
+//static void initGpio(void);
+//static void enableTransmit(void);
+//static void disableTransmit(void);
 
 
 
@@ -194,7 +194,7 @@ static void onMsgTransmited(void)
 **************************************************************************************************/
 static void lostLinkHandler(void)
 {
-	#warning Lost connection handler here
+//	#warning Lost connection handler here
 	
 /*	MG_SetReg(MG_REG_RW_SLAVE_LEFT_TRACK_SPEED, 0x00);
 	MG_SetReg(MG_REG_RW_SLAVE_RIGHT_TRACK_SPEED, 0x00);

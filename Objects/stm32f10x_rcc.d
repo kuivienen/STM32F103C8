@@ -9,6 +9,7 @@
 .\objects\stm32f10x_rcc.o: .\CMSIS\stm32f10x.h
 .\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\stm32f10x_rcc.o: .\SPL\inc\stm32f10x_usart.h

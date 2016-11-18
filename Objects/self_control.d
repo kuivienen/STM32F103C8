@@ -10,6 +10,7 @@
 .\objects\self_control.o: .\CMSIS\stm32f10x.h
 .\objects\self_control.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\self_control.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\self_control.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\self_control.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\self_control.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\self_control.o: .\SPL\inc\stm32f10x_usart.h

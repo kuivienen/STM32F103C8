@@ -9,6 +9,7 @@
 .\objects\main.o: .\CMSIS\stm32f10x.h
 .\objects\main.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\main.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\main.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\main.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\main.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\main.o: .\SPL\inc\stm32f10x_usart.h
@@ -22,3 +23,13 @@
 .\objects\main.o: .\Library\motor.h
 .\objects\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\objects\main.o: .\Library\buttons.h
+.\objects\main.o: .\Library\link_slave.h
+.\objects\main.o: .\MilliG\milli_ganjubus.h
+.\objects\main.o: .\MilliG\ganjubus_common.h
+.\objects\main.o: .\MilliG\mg_common.h
+.\objects\main.o: .\MilliG\mg_regs.h
+.\objects\main.o: .\MilliG\mg_reg_names.h
+.\objects\main.o: .\MilliG\mg_canal_level.h
+.\objects\main.o: .\Library\crc.h
+.\objects\main.o: .\Library\common.h
+.\objects\main.o: .\MilliG\mg_data_level.h

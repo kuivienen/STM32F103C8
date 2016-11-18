@@ -4,8 +4,9 @@
  Заголовочный файл модуля работы с регистрами
 
 **************************************************************************************************/
+#ifndef __MG_REGS__
 
-#pragma once
+#define __MG_REGS__
 
 
 #include <stdint.h>
@@ -34,3 +35,5 @@ bool MG_IsRegChanged(mg_reg_addr reg);
 bool MG_IsRegValid(mg_reg_addr reg);
 bool MG_IsRegTypeR(mg_reg_addr reg);
 bool MG_IsRegTypeW(mg_reg_addr reg);
+
+#endif		/* __MG_REGS__ */

@@ -1,4 +1,6 @@
-#pragma once
+#ifndef __SELF_CONTROL__
+
+#define __SELF_CONTROL__
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -18,3 +20,5 @@ void LedOn( void );
 void LedOff( void );
 bool IsInSleepMode( void );
 void InitIwdg( void );
+
+#endif	/*	__SELF_CONTROL__	*/

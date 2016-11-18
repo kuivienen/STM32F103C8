@@ -5,7 +5,9 @@
    
 **************************************************************************************************/
 
-#pragma once
+#ifndef __TIME_SERVICE__
+
+#define __TIME_SERVICE__
 
 
 #include <stdint.h>
@@ -70,3 +72,5 @@ static inline bool CheckSoftTimer(soft_timer * timer)
 {
 	return ((system_time)(GetSystemTime() - timer->time) >= timer->delay);
 }
+
+#endif	/*	__TIME_SERVICE__	*/

@@ -10,6 +10,7 @@
 .\objects\common.o: .\CMSIS\stm32f10x.h
 .\objects\common.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\common.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\common.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\common.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\common.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\common.o: .\SPL\inc\stm32f10x_usart.h

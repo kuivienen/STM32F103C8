@@ -10,6 +10,7 @@
 .\objects\mg_canal_level.o: .\CMSIS\stm32f10x.h
 .\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\mg_canal_level.o: .\SPL\inc\stm32f10x_usart.h

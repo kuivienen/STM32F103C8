@@ -9,6 +9,7 @@
 .\objects\buttons.o: .\CMSIS\stm32f10x_conf.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_dma.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_gpio.h
+.\objects\buttons.o: .\SPL\inc\stm32f10x_iwdg.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_usart.h

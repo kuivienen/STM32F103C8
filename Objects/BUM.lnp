@@ -9,6 +9,7 @@
 ".\objects\stm32f10x_tim.o"
 ".\objects\stm32f10x_dma.o"
 ".\objects\stm32f10x_usart.o"
+".\objects\stm32f10x_iwdg.o"
 ".\objects\time_service.o"
 ".\objects\self_control.o"
 ".\objects\pwm.o"
