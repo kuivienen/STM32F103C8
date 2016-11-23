@@ -202,15 +202,19 @@ void SetPwmTarget ( timer_struct * timer, enum _Channel channel, int8_t data )
 {
 	switch (channel){
 		case FIRST:		
+			timer->switchDirFlagCH1 = 1;
 			timer->channel1->pwmTargetChannel1 = data;
 			break;
-		case SECOND:		
+		case SECOND:
+			timer->switchDirFlagCH2 = 1;			
 			timer->channel2->pwmTargetChannel2 = data;
 			break;
-		case THIRD:		
+		case THIRD:	
+			timer->switchDirFlagCH3 = 1;
 			timer->channel3->pwmTargetChannel3 = data;
 			break;
-		case FOURS:		
+		case FOURS:	
+			timer->switchDirFlagCH4 = 1;
 			timer->channel4->pwmTargetChannel4 = data;
 			break;
 		default:

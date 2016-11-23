@@ -34,11 +34,14 @@ void InitSelfControlFsm( void )
 **************************************************************************************************/
 void SelfControlFsm( void )
 {	
-	/*if ( MG_IsRegChanged(MG_REG_RW_RESET))
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_BUTTON_STATE ))
 	{
-		while(1)
-		{}
-	}*/
+
+	}
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER ))
+	{
+		Timer3.pwmTargetChannel1 = MG_GetReg( MG_REG_RW_DEVICE_POWER );
+	}
 }
 
 /**************************************************************************************************

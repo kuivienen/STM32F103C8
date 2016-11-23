@@ -7,6 +7,8 @@
 #include <stm32f10x.h>
 #include <time_service.h>
 #include <uart.h>
+#include <mg_regs.h>
+#include <pwm.h>
 
 
 void InitSelfControlFsm( void );

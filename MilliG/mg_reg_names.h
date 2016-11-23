@@ -13,16 +13,16 @@
 #define MG_REGS_RO_TOTAL 0x03
 // ----------------------------------------
 
-#define RO_DEVICE_ID								0x00	//	ID устройства для проверки работоспособности
-#define RO_DEVISE_BUTTON_STATE			0x01	//	текущее состояние кнопок переключения каналов
-#define RO_DEVICE_POWER							0X02	//	текущая длительность огибающей
+#define MG_REG_RO_DEVICE_ID									0x00	//	ID устройства для проверки работоспособности
+#define MG_REG_RO_DEVICE_BUTTON_STATE				0x01	//	текущее состояние кнопок переключения каналов
+#define MG_REG_RO_DEVICE_POWER							0X02	//	текущая длительность огибающей
 
 
 
 
 #define	MG_REGS_RW_TOTAL 0x02
 // ----------------------------------------
-#define RW_DEVISE_BUTTON_STATE			0x80	//	запись состояния кнопок переключения каналов
-#define RW_DEVICE_POWER							0X81	//	запись длительности огибающей
+#define MG_REG_RW_DEVICE_BUTTON_STATE				0x80	//	запись состояния кнопок переключения каналов
+#define MG_REG_RW_DEVICE_POWER							0X81	//	запись длительности огибающей
 #endif		/* __MG_REG_NAMES__ */
 
