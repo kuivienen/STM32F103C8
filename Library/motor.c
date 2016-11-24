@@ -13,16 +13,15 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 #ifdef MOTOR1
 	motor_struct Motor1 =
 	{
-		.regs 			= First,
+		.regs 				= First,
 		
-		.fPort			=	MOTOR1_PORT_F,
-		.bPort			=	MOTOR1_PORT_B,
-		.fPin				=	MOTOR1_PIN_F,
-		.bPin				=	MOTOR1_PIN_B,
+		.fPort				=	MOTOR1_PORT_F,
+		.bPort				=	MOTOR1_PORT_B,
+		.fPin					=	MOTOR1_PIN_F,
+		.bPin					=	MOTOR1_PIN_B,
 		
-		.dir				= MOTOR1_DIR,
-		.on					= MOTOR1_ON,
-		.power			= MOTOR1_POWER,	
+		.targetPower	= 8,
+		.currentPower	=	-10,
 	};
 #endif
 	
@@ -36,9 +35,8 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.fPin				=	MOTOR2_PIN_F,
 		.bPin				=	MOTOR2_PIN_B,
 		
-		.dir				= MOTOR2_DIR,
-		.on					= MOTOR2_ON,
-		.power			= MOTOR2_POWER,	
+		.targetPower	= 8,
+		.currentPower	=	-10,	
 	};
 #endif
 	
@@ -52,9 +50,8 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.fPin				=	MOTOR3_PIN_F,
 		.bPin				=	MOTOR3_PIN_B,
 		
-		.dir				= MOTOR3_DIR,
-		.on					= MOTOR3_ON,
-		.power			= MOTOR3_POWER,	
+		.targetPower	= 8,
+		.currentPower	=	-10,	
 	};
 #endif	
 	
@@ -68,9 +65,8 @@ void SetPinMode( motor_struct * motor, uint8_t runmode );
 		.fPin				=	MOTOR4_PIN_F,
 		.bPin				=	MOTOR4_PIN_B,
 		
-		.dir				= MOTOR4_DIR,
-		.on					= MOTOR4_ON,
-		.power			= MOTOR4_POWER,	
+		.targetPower	= 8,
+		.currentPower	=	-10,	
 	};
 #endif
 

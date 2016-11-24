@@ -6,7 +6,7 @@
 #include <stm32f10x.h>
 
 #include "macros.h"
-//#include <pwm.h>
+#include <pwm.h>
 
 
 /**************************************************************************************************
@@ -15,47 +15,51 @@
 
 #define MOTOR1
 
-	#define MOTOR1_PORT_F		GPIOB
-	#define MOTOR1_PORT_B		GPIOB
-	#define MOTOR1_PIN_F		GPIO_Pin_2
-	#define MOTOR1_PIN_B		GPIO_Pin_3
+	#define MOTOR1_PORT_F					GPIOB
+	#define MOTOR1_PORT_B					GPIOB
+	#define MOTOR1_PIN_F					GPIO_Pin_2
+	#define MOTOR1_PIN_B					GPIO_Pin_3
 	
-	#define MOTOR1_DIR			0							//	направление вращения начальное
-	#define	MOTOR1_ON				0							//	вкл/выкл
-	#define MOTOR1_POWER		0							//	начальная мощность
+	#define MOTOR1_DIR						0							//	направление вращения начальное
+	#define	MOTOR1_ON							0							//	вкл/выкл
+	#define MOTOR1_POWER					0							//	начальная мощность
+	#define	MOTOR1_ADDRESS_POWER		Timer1.pwmTargetChannel1
 	
 #define MOTOR2
 
-	#define MOTOR2_PORT_F		GPIOB
-	#define MOTOR2_PORT_B		GPIOB
-	#define MOTOR2_PIN_F		GPIO_Pin_4
-	#define MOTOR2_PIN_B		GPIO_Pin_14
+	#define MOTOR2_PORT_F					GPIOB
+	#define MOTOR2_PORT_B					GPIOB
+	#define MOTOR2_PIN_F					GPIO_Pin_4
+	#define MOTOR2_PIN_B					GPIO_Pin_14
 
-	#define MOTOR2_DIR			0							//	направление вращения начальное
-	#define	MOTOR2_ON				0							//	вкл/выкл
-	#define MOTOR2_POWER		0							//	начальная мощность
+	#define MOTOR2_DIR						0							//	направление вращения начальное
+	#define	MOTOR2_ON							0							//	вкл/выкл
+	#define MOTOR2_POWER					0							//	начальная мощность
+	#define	MOTOR2_ADDRESS_POWER		Timer1.pwmTargetChannel2
 	
 #define MOTOR3
 
-	#define MOTOR3_PORT_F		GPIOB
-	#define MOTOR3_PORT_B		GPIOB
-	#define MOTOR3_PIN_F		GPIO_Pin_10
-	#define MOTOR3_PIN_B		GPIO_Pin_11
+	#define MOTOR3_PORT_F					GPIOB
+	#define MOTOR3_PORT_B					GPIOB
+	#define MOTOR3_PIN_F					GPIO_Pin_10
+	#define MOTOR3_PIN_B					GPIO_Pin_11
 	
-	#define MOTOR3_DIR			0							//	направление вращения начальное
-	#define	MOTOR3_ON				0							//	вкл/выкл
-	#define MOTOR3_POWER		0							//	начальная мощность
+	#define MOTOR3_DIR						0							//	направление вращения начальное
+	#define	MOTOR3_ON							0							//	вкл/выкл
+	#define MOTOR3_POWER					0							//	начальная мощность
+	#define	MOTOR3_ADDRESS_POWER		Timer4.pwmTargetChannel3
 	
 #define MOTOR4
 
-	#define MOTOR4_PORT_F		GPIOB
-	#define MOTOR4_PORT_B		GPIOB
-	#define MOTOR4_PIN_F		GPIO_Pin_12
-	#define MOTOR4_PIN_B		GPIO_Pin_13
+	#define MOTOR4_PORT_F					GPIOB
+	#define MOTOR4_PORT_B					GPIOB
+	#define MOTOR4_PIN_F					GPIO_Pin_12
+	#define MOTOR4_PIN_B					GPIO_Pin_13
 	
-	#define MOTOR4_DIR			0							//	направление вращения начальное
-	#define	MOTOR4_ON				0							//	вкл/выкл
-	#define MOTOR4_POWER		0							//	начальная мощность
+	#define MOTOR4_DIR						0							//	направление вращения начальное
+	#define	MOTOR4_ON							0							//	вкл/выкл
+	#define MOTOR4_POWER					0							//	начальная мощность
+	#define	MOTOR4_ADDRESS_POWER		Timer4.pwmTargetChannel4
 	
 	
 										/*	РЕЖИМЫ РАБОТЫ МОТОРОВ	*/	
@@ -79,9 +83,9 @@ typedef struct
 	GPIO_TypeDef 						*bPort;
 	uint16_t 								bPin;
 	
-	uint8_t 								dir;
-	uint8_t 								on;
-	uint8_t 								power;
+	int8_t 									targetPower;
+	int8_t 									currentPower;
+
 } motor_struct;
 
 

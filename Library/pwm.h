@@ -90,10 +90,21 @@
 	#define TIMER3_CH3						&Timer4
 	#define TIMER3_CH4						&Timer4
 	
+	
+
+
+	
 /**************************************************************************************************
                                           ТИПЫ ДАННЫХ
 **************************************************************************************************/
+
+//	количество каналов управления
+
+extern enum _Channel {FIRST, SECOND, THIRD, FOURS} channel;
+
+
 //*******структура данных для таймеров************
+
 typedef struct str
 {
 	TIM_TypeDef * regs;
@@ -141,6 +152,53 @@ typedef struct str
 } timer_struct;
 
 
+typedef struct
+{
+	TIM_TypeDef * regs;
+	
+	uint16_t 				ch1Pin;
+	GPIO_TypeDef 		* ch1Port;
+	
+	uint16_t 				ch2Pin;
+	GPIO_TypeDef 		* ch2Port;
+	
+	uint16_t 				ch3Pin;
+	GPIO_TypeDef 		* ch3Port;
+	
+	uint16_t 				ch4Pin;
+	GPIO_TypeDef 		* ch4Port;
+	uint16_t 				freqSig;
+	
+	IRQn_Type 			irq;
+	
+	uint8_t 				pwmMax;
+	
+	volatile int8_t pwmModTim;
+	
+	int8_t					pwmTargetChannel1;
+	int8_t					pwmTargetChannel2;
+	int8_t					pwmTargetChannel3;
+	int8_t					pwmTargetChannel4;
+	
+	int8_t					pwmCurrentChannel1;
+	int8_t					pwmCurrentChannel2;
+	int8_t					pwmCurrentChannel3;
+	int8_t					pwmCurrentChannel4;
+	
+	struct str  		*channel1;
+	struct str   		*channel2;
+	struct str  		*channel3;
+	struct str   		*channel4;
+	
+	bool 						accelerationFlag;
+	bool						switchDirFlagCH1;	
+	bool						switchDirFlagCH2;
+	bool						switchDirFlagCH3;
+	bool						switchDirFlagCH4;
+	
+} acceleration_timer_struct;
+
+
 /**************************************************************************************************
                                          EXTERN-ПЕРЕМЕННЫЕ
 **************************************************************************************************/
@@ -153,11 +211,9 @@ typedef struct str
 #endif
 
 #ifdef TIMER_3
-	extern timer_struct Timer3;
+	extern acceleration_timer_struct Timer3;
 #endif
 
-//	количество каналов управления
-extern enum _Channel {FIRST, SECOND, THIRD, FOURS} channel;
 
 /**************************************************************************************************
                                    ПРОТОТИПЫ ГЛОБАЛЬНЫХ ФУНКЦИЙ

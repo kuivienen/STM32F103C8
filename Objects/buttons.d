@@ -20,4 +20,5 @@
 .\objects\buttons.o: .\Library\macros.h
 .\objects\buttons.o: Library\pwm.h
 .\objects\buttons.o: Library\motor.h
+.\objects\buttons.o: .\Library\pwm.h
 .\objects\buttons.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

@@ -19,4 +19,5 @@
 .\objects\pwm.o: .\Services\time_service.h
 .\objects\pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 .\objects\pwm.o: Library\motor.h
+.\objects\pwm.o: .\Library\pwm.h
 .\objects\pwm.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

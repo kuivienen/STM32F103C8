@@ -16,3 +16,8 @@
 .\objects\motor.o: .\SPL\inc\stm32f10x_wwdg.h
 .\objects\motor.o: .\SPL\inc\misc.h
 .\objects\motor.o: Library\macros.h
+.\objects\motor.o: .\Library\pwm.h
+.\objects\motor.o: .\Services\time_service.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\motor.o: .\Library\motor.h
+.\objects\motor.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
