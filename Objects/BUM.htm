@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\BUM.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\BUM.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Nov 24 09:43:50 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Thu Nov 24 11:51:35 2016
 <BR><P>
 <H3>Maximum Stack Usage =        108 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -12,7 +12,7 @@ __rt_entry_main &rArr; main &rArr; InitLinkSlave &rArr; InitUart &rArr; initUart
 <H3>
 Functions with no stack information
 </H3><UL>
- <LI><a href="#[148]">__user_initial_stackheap</a>
+ <LI><a href="#[149]">__user_initial_stackheap</a>
 </UL>
 </UL>
 <P>
@@ -90,7 +90,7 @@ Function Pointers
  <LI><a href="#[b]">UsageFault_Handler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
  <LI><a href="#[10]">WWDG_IRQHandler</a> from startup_stm32f10x_md.o(.text) referenced from startup_stm32f10x_md.o(RESET)
  <LI><a href="#[3e]">__main</a> from __main.o(!!!main) referenced from startup_stm32f10x_md.o(.text)
- <LI><a href="#[134]">getRegAdrDummy</a> from mg_common.o(.text) referenced from mg_common.o(.text)
+ <LI><a href="#[135]">getRegAdrDummy</a> from mg_common.o(.text) referenced from mg_common.o(.text)
  <LI><a href="#[3d]">onMsgTransmited</a> from link_slave.o(.text) referenced from link_slave.o(.text)
 </UL>
 <P>
@@ -110,86 +110,86 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry
 </UL>
 
-<P><STRONG><a name="[14a]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[14b]"></a>__scatterload_rt2_thumb_only</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[14b]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
+<P><STRONG><a name="[14c]"></a>__scatterload_null</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)
 
-<P><STRONG><a name="[14c]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[14d]"></a>__decompress</STRONG> (Thumb, 90 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
 
-<P><STRONG><a name="[14d]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
+<P><STRONG><a name="[14e]"></a>__decompress1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(!!dczerorl2), UNUSED)
 
-<P><STRONG><a name="[14e]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
+<P><STRONG><a name="[14f]"></a>__scatterload_zeroinit</STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)
 
 <P><STRONG><a name="[45]"></a>__rt_lib_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_li
 </UL>
 
-<P><STRONG><a name="[14f]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
+<P><STRONG><a name="[150]"></a>__rt_lib_init_alloca_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))
 
-<P><STRONG><a name="[150]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
+<P><STRONG><a name="[151]"></a>__rt_lib_init_argv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))
 
-<P><STRONG><a name="[151]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
+<P><STRONG><a name="[152]"></a>__rt_lib_init_atexit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))
 
-<P><STRONG><a name="[152]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
+<P><STRONG><a name="[153]"></a>__rt_lib_init_clock_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))
 
-<P><STRONG><a name="[153]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
+<P><STRONG><a name="[154]"></a>__rt_lib_init_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))
 
-<P><STRONG><a name="[154]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
+<P><STRONG><a name="[155]"></a>__rt_lib_init_exceptions_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))
 
-<P><STRONG><a name="[155]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
+<P><STRONG><a name="[156]"></a>__rt_lib_init_fp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000002))
 
-<P><STRONG><a name="[156]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
+<P><STRONG><a name="[157]"></a>__rt_lib_init_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))
 
-<P><STRONG><a name="[157]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
+<P><STRONG><a name="[158]"></a>__rt_lib_init_getenv_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))
 
-<P><STRONG><a name="[158]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
+<P><STRONG><a name="[159]"></a>__rt_lib_init_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))
 
-<P><STRONG><a name="[159]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
+<P><STRONG><a name="[15a]"></a>__rt_lib_init_lc_collate_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))
 
-<P><STRONG><a name="[15a]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
+<P><STRONG><a name="[15b]"></a>__rt_lib_init_lc_ctype_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))
 
-<P><STRONG><a name="[15b]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
+<P><STRONG><a name="[15c]"></a>__rt_lib_init_lc_monetary_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))
 
-<P><STRONG><a name="[15c]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
+<P><STRONG><a name="[15d]"></a>__rt_lib_init_lc_numeric_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))
 
-<P><STRONG><a name="[15d]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
+<P><STRONG><a name="[15e]"></a>__rt_lib_init_lc_time_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))
 
-<P><STRONG><a name="[15e]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
+<P><STRONG><a name="[15f]"></a>__rt_lib_init_preinit_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))
 
-<P><STRONG><a name="[15f]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
+<P><STRONG><a name="[160]"></a>__rt_lib_init_rand_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))
 
-<P><STRONG><a name="[160]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
+<P><STRONG><a name="[161]"></a>__rt_lib_init_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))
 
-<P><STRONG><a name="[161]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
+<P><STRONG><a name="[162]"></a>__rt_lib_init_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))
 
-<P><STRONG><a name="[162]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
+<P><STRONG><a name="[163]"></a>__rt_lib_init_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))
 
-<P><STRONG><a name="[163]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
+<P><STRONG><a name="[164]"></a>__rt_lib_init_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))
 
 <P><STRONG><a name="[4a]"></a>__rt_lib_shutdown</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[49]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit_ls
 </UL>
 
-<P><STRONG><a name="[164]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
+<P><STRONG><a name="[165]"></a>__rt_lib_shutdown_cpp_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))
 
-<P><STRONG><a name="[165]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
+<P><STRONG><a name="[166]"></a>__rt_lib_shutdown_fp_trap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000007))
 
-<P><STRONG><a name="[166]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
+<P><STRONG><a name="[167]"></a>__rt_lib_shutdown_heap_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000F))
 
-<P><STRONG><a name="[167]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
+<P><STRONG><a name="[168]"></a>__rt_lib_shutdown_return</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000010))
 
-<P><STRONG><a name="[168]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
+<P><STRONG><a name="[169]"></a>__rt_lib_shutdown_signal_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000A))
 
-<P><STRONG><a name="[169]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
+<P><STRONG><a name="[16a]"></a>__rt_lib_shutdown_stdio_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))
 
-<P><STRONG><a name="[16a]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
+<P><STRONG><a name="[16b]"></a>__rt_lib_shutdown_user_alloc_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))
 
 <P><STRONG><a name="[40]"></a>__rt_entry</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload_rt2
 <LI><a href="#[3e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main
 </UL>
 
-<P><STRONG><a name="[16b]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
+<P><STRONG><a name="[16c]"></a>__rt_entry_presh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))
 
 <P><STRONG><a name="[42]"></a>__rt_entry_sh</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
@@ -202,7 +202,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[45]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init
 </UL>
 
-<P><STRONG><a name="[16c]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
+<P><STRONG><a name="[16d]"></a>__rt_entry_postsh_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))
 
 <P><STRONG><a name="[46]"></a>__rt_entry_main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108 + Unknown Stack Size
@@ -212,9 +212,9 @@ Global Symbols
 <LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
-<P><STRONG><a name="[16d]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
+<P><STRONG><a name="[16e]"></a>__rt_entry_postli_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))
 
-<P><STRONG><a name="[149]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
+<P><STRONG><a name="[14a]"></a>__rt_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))
 <BR><BR>[Called By]<UL><LI><a href="#[48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit
 </UL>
 
@@ -222,7 +222,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[4a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_shutdown
 </UL>
 
-<P><STRONG><a name="[16e]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
+<P><STRONG><a name="[16f]"></a>__rt_exit_prels_1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))
 
 <P><STRONG><a name="[4b]"></a>__rt_exit_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[4c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
@@ -408,7 +408,7 @@ Global Symbols
 <P><STRONG><a name="[10]"></a>WWDG_IRQHandler</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_stm32f10x_md.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[148]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_stm32f10x_md.o(.text))
+<P><STRONG><a name="[149]"></a>__user_initial_stackheap</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, startup_stm32f10x_md.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
@@ -444,7 +444,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[62]"></a>assert_failed</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, main.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
+<BR><BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_GetFlagStatus
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_SetReload
 <LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IWDG_SetPrescaler
@@ -616,7 +616,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(.text)
 </UL>
-<P><STRONG><a name="[16f]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, system_stm32f10x.o(.text), UNUSED)
+<P><STRONG><a name="[170]"></a>SystemCoreClockUpdate</STRONG> (Thumb, 142 bytes, Stack size 8 bytes, system_stm32f10x.o(.text), UNUSED)
 
 <P><STRONG><a name="[55]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, misc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = NVIC_PriorityGroupConfig
@@ -631,8 +631,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartNvic
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartNvic
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
 </UL>
 
 <P><STRONG><a name="[64]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, misc.o(.text), UNUSED)
@@ -647,7 +647,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
 
-<P><STRONG><a name="[170]"></a>RCC_DeInit</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
+<P><STRONG><a name="[171]"></a>RCC_DeInit</STRONG> (Thumb, 64 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
 
 <P><STRONG><a name="[67]"></a>RCC_HSEConfig</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, stm32f10x_rcc.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -683,7 +683,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
 
-<P><STRONG><a name="[171]"></a>RCC_GetSYSCLKSource</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
+<P><STRONG><a name="[172]"></a>RCC_GetSYSCLKSource</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
 
 <P><STRONG><a name="[6f]"></a>RCC_HCLKConfig</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, stm32f10x_rcc.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -740,8 +740,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -750,8 +750,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
 </UL>
 
 <P><STRONG><a name="[7b]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, stm32f10x_rcc.o(.text), UNUSED)
@@ -784,7 +784,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OutputMCO
 </UL>
 
-<P><STRONG><a name="[172]"></a>RCC_ClearFlag</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
+<P><STRONG><a name="[173]"></a>RCC_ClearFlag</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(.text), UNUSED)
 
 <P><STRONG><a name="[7f]"></a>RCC_GetITStatus</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, stm32f10x_rcc.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -808,14 +808,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartGpio
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGpioMotor
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimGpio
+<BR>[Called By]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartGpio
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGpioMotor
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimGpio
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OutputMCO
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Blink
 </UL>
 
-<P><STRONG><a name="[173]"></a>GPIO_StructInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
+<P><STRONG><a name="[174]"></a>GPIO_StructInit</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_gpio.o(.text), UNUSED)
 
 <P><STRONG><a name="[83]"></a>GPIO_ReadInputDataBit</STRONG> (Thumb, 170 bytes, Stack size 16 bytes, stm32f10x_gpio.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -838,7 +838,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Blink
 </UL>
 
@@ -847,7 +847,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
+<BR>[Called By]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
 <LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Blink
 </UL>
 
@@ -894,7 +894,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[91]"></a>TIM_OC1Init</STRONG> (Thumb, 540 bytes, Stack size 24 bytes, stm32f10x_tim.o(.text))
@@ -902,7 +902,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[92]"></a>TIM_OC2Init</STRONG> (Thumb, 438 bytes, Stack size 24 bytes, stm32f10x_tim.o(.text))
@@ -910,7 +910,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[93]"></a>TIM_OC3Init</STRONG> (Thumb, 458 bytes, Stack size 24 bytes, stm32f10x_tim.o(.text))
@@ -918,7 +918,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[94]"></a>TIM_OC4Init</STRONG> (Thumb, 302 bytes, Stack size 24 bytes, stm32f10x_tim.o(.text))
@@ -926,7 +926,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[95]"></a>TIM_SetIC4Prescaler</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text), UNUSED)
@@ -979,24 +979,24 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
 
-<P><STRONG><a name="[10a]"></a>TIM_TimeBaseStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<P><STRONG><a name="[10b]"></a>TIM_TimeBaseStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
-<P><STRONG><a name="[10b]"></a>TIM_OCStructInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<P><STRONG><a name="[10c]"></a>TIM_OCStructInit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
-<P><STRONG><a name="[174]"></a>TIM_ICStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
+<P><STRONG><a name="[175]"></a>TIM_ICStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
-<P><STRONG><a name="[175]"></a>TIM_BDTRStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
+<P><STRONG><a name="[176]"></a>TIM_BDTRStructInit</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_tim.o(.text), UNUSED)
 
 <P><STRONG><a name="[a0]"></a>TIM_Cmd</STRONG> (Thumb, 166 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = TIM_Cmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[a1]"></a>TIM_CtrlPWMOutputs</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text))
@@ -1004,7 +1004,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Called By]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 
 <P><STRONG><a name="[a2]"></a>TIM_ITConfig</STRONG> (Thumb, 178 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text))
@@ -1012,7 +1012,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
+<BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
 </UL>
 
 <P><STRONG><a name="[a3]"></a>TIM_GenerateEvent</STRONG> (Thumb, 144 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text), UNUSED)
@@ -1292,8 +1292,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
 </UL>
 
 <P><STRONG><a name="[e5]"></a>TIM_ClearITPendingBit</STRONG> (Thumb, 214 bytes, Stack size 16 bytes, stm32f10x_tim.o(.text))
@@ -1301,9 +1301,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
-<LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
 </UL>
 
 <P><STRONG><a name="[e6]"></a>USART_DeInit</STRONG> (Thumb, 174 bytes, Stack size 8 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1318,23 +1318,23 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartParams
+<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartParams
 </UL>
 
-<P><STRONG><a name="[176]"></a>USART_StructInit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
+<P><STRONG><a name="[177]"></a>USART_StructInit</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
 
 <P><STRONG><a name="[e9]"></a>USART_ClockInit</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, stm32f10x_usart.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
 
-<P><STRONG><a name="[177]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
+<P><STRONG><a name="[178]"></a>USART_ClockStructInit</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_usart.o(.text), UNUSED)
 
 <P><STRONG><a name="[ea]"></a>USART_Cmd</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, stm32f10x_usart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = USART_Cmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
 <P><STRONG><a name="[eb]"></a>USART_ITConfig</STRONG> (Thumb, 308 bytes, Stack size 32 bytes, stm32f10x_usart.o(.text))
@@ -1342,7 +1342,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
 <P><STRONG><a name="[ec]"></a>USART_DMACmd</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1374,8 +1374,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataToUart
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
+<BR>[Called By]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataToUart
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
 </UL>
 
 <P><STRONG><a name="[f3]"></a>USART_ReceiveData</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1431,7 +1431,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
+<BR>[Called By]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
 </UL>
 
 <P><STRONG><a name="[100]"></a>USART_GetITStatus</STRONG> (Thumb, 280 bytes, Stack size 32 bytes, stm32f10x_usart.o(.text), UNUSED)
@@ -1458,7 +1458,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[178]"></a>IWDG_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(.text), UNUSED)
+<P><STRONG><a name="[179]"></a>IWDG_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_iwdg.o(.text), UNUSED)
 
 <P><STRONG><a name="[105]"></a>IWDG_GetFlagStatus</STRONG> (Thumb, 42 bytes, Stack size 16 bytes, stm32f10x_iwdg.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
@@ -1474,9 +1474,9 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
 <P><STRONG><a name="[106]"></a>GetSystemTime</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, time_service.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitInputStruct
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartSoftTimer
+<BR><BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitInputStruct
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartSoftTimer
 <LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Delay
 </UL>
@@ -1487,12 +1487,13 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[4d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Blink
 </UL>
 
-<P><STRONG><a name="[179]"></a>InitSelfControlFsm</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, self_control.o(.text), UNUSED)
+<P><STRONG><a name="[17a]"></a>InitSelfControlFsm</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, self_control.o(.text), UNUSED)
 
-<P><STRONG><a name="[5f]"></a>SelfControlFsm</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, self_control.o(.text))
+<P><STRONG><a name="[5f]"></a>SelfControlFsm</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, self_control.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SelfControlFsm
 </UL>
-<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegChanged
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPwmTarget
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegChanged
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetReg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
@@ -1502,13 +1503,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[109]"></a>initTimParams</STRONG> (Thumb, 244 bytes, Stack size 40 bytes, pwm.o(.text))
+<P><STRONG><a name="[10a]"></a>initTimParams</STRONG> (Thumb, 244 bytes, Stack size 40 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = initTimParams &rArr; TIM_OC4Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_CtrlPWMOutputs
 <LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OCStructInit
-<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseStructInit
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OCStructInit
+<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_TimeBaseStructInit
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC4Init
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC3Init
 <LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_OC2Init
@@ -1518,7 +1519,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitTimer
 </UL>
 
-<P><STRONG><a name="[10c]"></a>initTimNvic</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, pwm.o(.text))
+<P><STRONG><a name="[10d]"></a>initTimNvic</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = initTimNvic &rArr; NVIC_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ITConfig
@@ -1527,7 +1528,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitTimer
 </UL>
 
-<P><STRONG><a name="[10d]"></a>initTimGpio</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, pwm.o(.text))
+<P><STRONG><a name="[10e]"></a>initTimGpio</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = initTimGpio &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -1535,7 +1536,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitTimer
 </UL>
 
-<P><STRONG><a name="[10e]"></a>initTimRcc</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, pwm.o(.text))
+<P><STRONG><a name="[10f]"></a>initTimRcc</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = initTimRcc &rArr; RCC_APB1PeriphClockCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
@@ -1547,10 +1548,10 @@ Global Symbols
 <P><STRONG><a name="[58]"></a>InitTimer</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = InitTimer &rArr; initTimParams &rArr; TIM_OC4Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimGpio
-<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimRcc
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimGpio
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimNvic
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initTimParams
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1562,30 +1563,32 @@ Global Symbols
 <P><STRONG><a name="[5b]"></a>SwitchDir</STRONG> (Thumb, 276 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = SwitchDir &rArr; SetPinMode &rArr; GPIO_SetBits
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
+<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[17a]"></a>SetPwmTarget</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
+<P><STRONG><a name="[109]"></a>SetPwmTarget</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelfControlFsm
+</UL>
 
 <P><STRONG><a name="[17b]"></a>switchDirFlag</STRONG> (Thumb, 62 bytes, Stack size 0 bytes, pwm.o(.text), UNUSED)
 
-<P><STRONG><a name="[111]"></a>enableChannel</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
+<P><STRONG><a name="[112]"></a>enableChannel</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
 </UL>
 
-<P><STRONG><a name="[112]"></a>disableChannel</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
+<P><STRONG><a name="[113]"></a>disableChannel</STRONG> (Thumb, 86 bytes, Stack size 0 bytes, pwm.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
 </UL>
 
-<P><STRONG><a name="[110]"></a>tim1IrqHandler</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, pwm.o(.text))
+<P><STRONG><a name="[111]"></a>tim1IrqHandler</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = tim1IrqHandler &rArr; TIM_ClearITPendingBit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableChannel
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableChannel
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableChannel
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableChannel
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM1_UP_IRQHandler
@@ -1594,15 +1597,15 @@ Global Symbols
 <P><STRONG><a name="[29]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = TIM1_UP_IRQHandler &rArr; tim1IrqHandler &rArr; TIM_ClearITPendingBit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim1IrqHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[113]"></a>tim4IrqHandler</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, pwm.o(.text))
+<P><STRONG><a name="[114]"></a>tim4IrqHandler</STRONG> (Thumb, 138 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = tim4IrqHandler &rArr; TIM_GetITStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableChannel
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableChannel
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;disableChannel
+<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enableChannel
 <LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
 </UL>
@@ -1612,11 +1615,11 @@ Global Symbols
 <P><STRONG><a name="[2e]"></a>TIM4_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TIM4_IRQHandler &rArr; tim4IrqHandler &rArr; TIM_GetITStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
+<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim4IrqHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[114]"></a>tim3IrqHandler</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pwm.o(.text))
+<P><STRONG><a name="[115]"></a>tim3IrqHandler</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = tim3IrqHandler &rArr; TIM_GetITStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
@@ -1628,11 +1631,11 @@ Global Symbols
 <P><STRONG><a name="[2d]"></a>TIM3_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, pwm.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = TIM3_IRQHandler &rArr; tim3IrqHandler &rArr; TIM_GetITStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tim3IrqHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[115]"></a>InitGpioMotor</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, motor.o(.text))
+<P><STRONG><a name="[116]"></a>InitGpioMotor</STRONG> (Thumb, 46 bytes, Stack size 16 bytes, motor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = InitGpioMotor &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
@@ -1643,32 +1646,32 @@ Global Symbols
 <P><STRONG><a name="[59]"></a>InitMotor</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, motor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = InitMotor &rArr; InitGpioMotor &rArr; GPIO_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGpioMotor
+<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGpioMotor
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[10f]"></a>SetPinMode</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, motor.o(.text))
+<P><STRONG><a name="[110]"></a>SetPinMode</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, motor.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SetPinMode &rArr; GPIO_SetBits
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunModeMotor
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RunModeMotor
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SwitchDir
 </UL>
 
-<P><STRONG><a name="[116]"></a>RunModeMotor</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, motor.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
+<P><STRONG><a name="[117]"></a>RunModeMotor</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, motor.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetPinMode
 </UL>
 
-<P><STRONG><a name="[11b]"></a>InitUart</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, uart.o(.text))
+<P><STRONG><a name="[11c]"></a>InitUart</STRONG> (Thumb, 76 bytes, Stack size 8 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = InitUart &rArr; initUartParams &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartGpio
-<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartParams
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartNvic
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartRcc
+<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartGpio
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartParams
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;initUartNvic
 <LI><a href="#[eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
 <LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
 </UL>
@@ -1678,21 +1681,21 @@ Global Symbols
 <P><STRONG><a name="[36]"></a>USART2_IRQHandler</STRONG> (Thumb, 10 bytes, Stack size 8 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = USART2_IRQHandler &rArr; uartIrqHandler &rArr; USART_ClearFlag
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uartIrqHandler
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_md.o(RESET)
 </UL>
-<P><STRONG><a name="[124]"></a>GetByteFromUart</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, uart.o(.text))
+<P><STRONG><a name="[125]"></a>GetByteFromUart</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = GetByteFromUart
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[126]"></a>IsNewDataInUart</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, uart.o(.text))
+<P><STRONG><a name="[127]"></a>IsNewDataInUart</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, uart.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[11d]"></a>SendDataToUart</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, uart.o(.text))
+<P><STRONG><a name="[11e]"></a>SendDataToUart</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SendDataToUart &rArr; USART_SendData
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_SendData
@@ -1717,22 +1720,22 @@ Global Symbols
 </UL>
 <P><STRONG><a name="[17f]"></a>Crc16</STRONG> (Thumb, 62 bytes, Stack size 12 bytes, crc.o(.text), UNUSED)
 
-<P><STRONG><a name="[12d]"></a>Crc8</STRONG> (Thumb, 56 bytes, Stack size 12 bytes, crc.o(.text))
+<P><STRONG><a name="[12e]"></a>Crc8</STRONG> (Thumb, 56 bytes, Stack size 12 bytes, crc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = Crc8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStuffAndCrc
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_WrapMsg
+<BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStuffAndCrc
+<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_WrapMsg
 </UL>
 
 <P><STRONG><a name="[57]"></a>InitLinkSlave</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, link_slave.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = InitLinkSlave &rArr; InitUart &rArr; initUartParams &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
-<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetOutputDevAdr
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetInputDevAdr
-<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitOutputStruct
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitInputStruct
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetOutputDevAdr
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetInputDevAdr
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitOutputStruct
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_InitInputStruct
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1742,51 +1745,51 @@ Global Symbols
 <P><STRONG><a name="[5e]"></a>ProcessLinkSlave</STRONG> (Thumb, 226 bytes, Stack size 16 bytes, link_slave.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = ProcessLinkSlave &rArr; MG_ProcessRequest &rArr; processWriteRangeReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_WrapMsg
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsAnsNeeded
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetOutBufSize
-<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetOutBufPtr
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartSoftTimer
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lostLinkHandler
-<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataToUart
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsNewDataInUart
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetByteFromUart
+<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_WrapMsg
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsAnsNeeded
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetOutBufSize
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetOutBufPtr
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;StartSoftTimer
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lostLinkHandler
+<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendDataToUart
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;IsNewDataInUart
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetByteFromUart
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSystemTime
 </UL>
 <BR>[Called By]<UL><LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[125]"></a>MG_ComposeMsg</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[126]"></a>MG_ComposeMsg</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = MG_ComposeMsg &rArr; processStuffAndCrc &rArr; Crc8
 </UL>
-<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStuffAndCrc
+<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
+<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStuffAndCrc
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSystemTime
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[129]"></a>MG_WrapMsg</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[12a]"></a>MG_WrapMsg</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = MG_WrapMsg &rArr; Crc8
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[128]"></a>MG_IsAnsNeeded</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[129]"></a>MG_IsAnsNeeded</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[134]"></a>getRegAdrDummy</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[135]"></a>getRegAdrDummy</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> mg_common.o(.text)
 </UL>
-<P><STRONG><a name="[11e]"></a>MG_InitInputStruct</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, mg_common.o(.text))
+<P><STRONG><a name="[11f]"></a>MG_InitInputStruct</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, mg_common.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = MG_InitInputStruct
 </UL>
 <BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSystemTime
@@ -1794,20 +1797,20 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLinkSlave
 </UL>
 
-<P><STRONG><a name="[11f]"></a>MG_InitOutputStruct</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[120]"></a>MG_InitOutputStruct</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLinkSlave
 </UL>
 
-<P><STRONG><a name="[135]"></a>MG_StartWriteReq</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, mg_common.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<P><STRONG><a name="[136]"></a>MG_StartWriteReq</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, mg_common.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
 </UL>
 
 <P><STRONG><a name="[181]"></a>MG_AddRegToWriteReq</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, mg_common.o(.text), UNUSED)
 
 <P><STRONG><a name="[182]"></a>MG_IsWriteReqFull</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
 
-<P><STRONG><a name="[137]"></a>MG_StartReadReq</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, mg_common.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<P><STRONG><a name="[138]"></a>MG_StartReadReq</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, mg_common.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
 </UL>
 
 <P><STRONG><a name="[183]"></a>MG_AddRegToReadReq</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
@@ -1816,78 +1819,78 @@ Global Symbols
 
 <P><STRONG><a name="[185]"></a>MG_SetRegRemapFunc</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
 
-<P><STRONG><a name="[120]"></a>MG_SetInputDevAdr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[121]"></a>MG_SetInputDevAdr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLinkSlave
 </UL>
 
-<P><STRONG><a name="[121]"></a>MG_SetOutputDevAdr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[122]"></a>MG_SetOutputDevAdr</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[57]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitLinkSlave
 </UL>
 
 <P><STRONG><a name="[186]"></a>MG_GetOutputDevAdr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
 
-<P><STRONG><a name="[12b]"></a>MG_GetOutBufPtr</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[12c]"></a>MG_GetOutBufPtr</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[12a]"></a>MG_GetOutBufSize</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mg_common.o(.text))
+<P><STRONG><a name="[12b]"></a>MG_GetOutBufSize</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mg_common.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[127]"></a>MG_ProcessRequest</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[128]"></a>MG_ProcessRequest</STRONG> (Thumb, 114 bytes, Stack size 24 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = MG_ProcessRequest &rArr; processWriteRangeReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[144]"></a>MG_ProcessAnswer</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, mg_data_level.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesAns
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeAns
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
+<P><STRONG><a name="[145]"></a>MG_ProcessAnswer</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, mg_data_level.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesAns
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeAns
+<LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
 </UL>
 
 <P><STRONG><a name="[108]"></a>MG_GetReg</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_regs.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<BR><BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelfControlFsm
 </UL>
 
-<P><STRONG><a name="[140]"></a>MG_SetReg</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, mg_regs.o(.text))
+<P><STRONG><a name="[141]"></a>MG_SetReg</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, mg_regs.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = MG_SetReg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
 </UL>
 
 <P><STRONG><a name="[107]"></a>MG_IsRegChanged</STRONG> (Thumb, 54 bytes, Stack size 0 bytes, mg_regs.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SelfControlFsm
 </UL>
 
-<P><STRONG><a name="[13c]"></a>MG_IsRegValid</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_regs.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<P><STRONG><a name="[13d]"></a>MG_IsRegValid</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_regs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesAns
+<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeAns
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
 </UL>
 
 <P><STRONG><a name="[187]"></a>MG_IsRegTypeR</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_regs.o(.text), UNUSED)
 
-<P><STRONG><a name="[13f]"></a>MG_IsRegTypeW</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_regs.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<P><STRONG><a name="[140]"></a>MG_IsRegTypeW</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_regs.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
 </UL>
 
 <P><STRONG><a name="[188]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
@@ -1900,8 +1903,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = __user_setup_stackheap
 </UL>
-<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
+<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_initial_stackheap
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_perproc_libspace
 </UL>
 <BR>[Called By]<UL><LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_sh
 </UL>
@@ -1910,14 +1913,14 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8 + Unknown Stack Size
 <LI>Call Chain = exit
 </UL>
-<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_exit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_entry_main
 </UL>
 
 <P><STRONG><a name="[18b]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
 
-<P><STRONG><a name="[147]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
+<P><STRONG><a name="[148]"></a>__user_perproc_libspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__user_setup_stackheap
 </UL>
 
@@ -1970,41 +1973,41 @@ Local Symbols
 <LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ICInit
 </UL>
 
-<P><STRONG><a name="[117]"></a>initUartNvic</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, uart.o(.text))
+<P><STRONG><a name="[118]"></a>initUartNvic</STRONG> (Thumb, 62 bytes, Stack size 16 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = initUartNvic &rArr; NVIC_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
-<P><STRONG><a name="[118]"></a>initUartParams</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, uart.o(.text))
+<P><STRONG><a name="[119]"></a>initUartParams</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = initUartParams &rArr; USART_Init &rArr; RCC_GetClocksFreq
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
-<P><STRONG><a name="[119]"></a>initUartGpio</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, uart.o(.text))
+<P><STRONG><a name="[11a]"></a>initUartGpio</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = initUartGpio &rArr; GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
-<P><STRONG><a name="[11a]"></a>initUartRcc</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, uart.o(.text))
+<P><STRONG><a name="[11b]"></a>initUartRcc</STRONG> (Thumb, 106 bytes, Stack size 8 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = initUartRcc &rArr; RCC_APB1PeriphClockCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;assert_failed
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
+<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUart
 </UL>
 
-<P><STRONG><a name="[11c]"></a>uartIrqHandler</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, uart.o(.text))
+<P><STRONG><a name="[11d]"></a>uartIrqHandler</STRONG> (Thumb, 162 bytes, Stack size 16 bytes, uart.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = uartIrqHandler &rArr; USART_ClearFlag
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ClearFlag
@@ -2016,11 +2019,11 @@ Local Symbols
 <P><STRONG><a name="[3d]"></a>onMsgTransmited</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, link_slave.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> link_slave.o(.text)
 </UL>
-<P><STRONG><a name="[122]"></a>lostLinkHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, link_slave.o(.text))
+<P><STRONG><a name="[123]"></a>lostLinkHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, link_slave.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[123]"></a>StartSoftTimer</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, link_slave.o(.text))
+<P><STRONG><a name="[124]"></a>StartSoftTimer</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, link_slave.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = StartSoftTimer
 </UL>
 <BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetSystemTime
@@ -2028,162 +2031,162 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[5e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ProcessLinkSlave
 </UL>
 
-<P><STRONG><a name="[12c]"></a>processStuffAndCrc</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[12d]"></a>processStuffAndCrc</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = processStuffAndCrc &rArr; Crc8
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
+<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-</UL>
-
-<P><STRONG><a name="[12f]"></a>processStartByte</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
-<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
 </UL>
 
-<P><STRONG><a name="[12e]"></a>processHeaderCrc</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[130]"></a>processStartByte</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processHeaderCrc
+<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
+</UL>
+
+<P><STRONG><a name="[12f]"></a>processHeaderCrc</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = processHeaderCrc &rArr; Crc8
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Crc8
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-</UL>
-
-<P><STRONG><a name="[131]"></a>isSizeValid</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
 </UL>
 
-<P><STRONG><a name="[130]"></a>processSize</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[132]"></a>isSizeValid</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processSize
+</UL>
+
+<P><STRONG><a name="[131]"></a>processSize</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = processSize
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isSizeValid
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
+<BR>[Calls]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isSizeValid
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-</UL>
-
-<P><STRONG><a name="[133]"></a>isDevAddrValid</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
 </UL>
 
-<P><STRONG><a name="[132]"></a>processDevAddress</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
+<P><STRONG><a name="[134]"></a>isDevAddrValid</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, mg_canal_level.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processDevAddress
+</UL>
+
+<P><STRONG><a name="[133]"></a>processDevAddress</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, mg_canal_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = processDevAddress
 </UL>
-<BR>[Calls]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isDevAddrValid
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
+<BR>[Calls]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isDevAddrValid
+<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processStartByte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
-</UL>
-
-<P><STRONG><a name="[136]"></a>G_MakeGbyte</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_StartReadReq
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_StartWriteReq
+<BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ComposeMsg
 </UL>
 
-<P><STRONG><a name="[138]"></a>generateNack</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[137]"></a>G_MakeGbyte</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_common.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_StartReadReq
+<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_StartWriteReq
+</UL>
+
+<P><STRONG><a name="[139]"></a>generateNack</STRONG> (Thumb, 50 bytes, Stack size 24 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<BR>[Calls]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 
-<P><STRONG><a name="[13b]"></a>processReadRangeReq</STRONG> (Thumb, 212 bytes, Stack size 32 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[13c]"></a>processReadRangeReq</STRONG> (Thumb, 212 bytes, Stack size 32 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = processReadRangeReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetReg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 
-<P><STRONG><a name="[13d]"></a>processReadSeriesReq</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[13e]"></a>processReadSeriesReq</STRONG> (Thumb, 190 bytes, Stack size 24 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = processReadSeriesReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_GetReg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 
-<P><STRONG><a name="[13e]"></a>processWriteRangeReq</STRONG> (Thumb, 242 bytes, Stack size 40 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[13f]"></a>processWriteRangeReq</STRONG> (Thumb, 242 bytes, Stack size 40 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = processWriteRangeReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegTypeW
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegTypeW
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
 </UL>
-<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 
-<P><STRONG><a name="[141]"></a>processWriteSeriesReq</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, mg_data_level.o(.text))
+<P><STRONG><a name="[142]"></a>processWriteSeriesReq</STRONG> (Thumb, 244 bytes, Stack size 32 bytes, mg_data_level.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = processWriteSeriesReq &rArr; generateNack
 </UL>
-<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegTypeW
-<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegTypeW
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_GetFcode
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;G_MakeGbyte
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
 </UL>
-<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
-</UL>
-
-<P><STRONG><a name="[142]"></a>processReadRangeAns</STRONG> (Thumb, 160 bytes, Stack size 40 bytes, mg_data_level.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
-</UL>
-<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
+<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 
-<P><STRONG><a name="[143]"></a>processReadSeriesAns</STRONG> (Thumb, 192 bytes, Stack size 40 bytes, mg_data_level.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+<P><STRONG><a name="[143]"></a>processReadRangeAns</STRONG> (Thumb, 160 bytes, Stack size 40 bytes, mg_data_level.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
 </UL>
-<BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
-</UL>
-
-<P><STRONG><a name="[146]"></a>processWriteRangeAns</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, mg_data_level.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
 </UL>
 
-<P><STRONG><a name="[145]"></a>processWriteSeriesAns</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, mg_data_level.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
+<P><STRONG><a name="[144]"></a>processReadSeriesAns</STRONG> (Thumb, 192 bytes, Stack size 40 bytes, mg_data_level.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_SetReg
+<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_IsRegValid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
 </UL>
 
-<P><STRONG><a name="[13a]"></a>G_MakeGbyte</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_data_level.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<P><STRONG><a name="[147]"></a>processWriteRangeAns</STRONG> (Thumb, 58 bytes, Stack size 8 bytes, mg_data_level.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
 </UL>
 
-<P><STRONG><a name="[139]"></a>G_GetFcode</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mg_data_level.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
-<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
-<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
+<P><STRONG><a name="[146]"></a>processWriteSeriesAns</STRONG> (Thumb, 98 bytes, Stack size 20 bytes, mg_data_level.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
+</UL>
+
+<P><STRONG><a name="[13b]"></a>G_MakeGbyte</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, mg_data_level.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+</UL>
+
+<P><STRONG><a name="[13a]"></a>G_GetFcode</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, mg_data_level.o(.text))
+<BR><BR>[Called By]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessAnswer
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteSeriesReq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processWriteRangeReq
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadSeriesReq
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;processReadRangeReq
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;generateNack
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MG_ProcessRequest
 </UL>
 <P>
 <H3>

@@ -1,6 +1,6 @@
 Dependencies for Project 'BUM', Target 'BUM': (DO NOT MODIFY !)
 F (.\StartUp\startup_stm32f10x_md.s)(0x4F1E667C)(--cpu Cortex-M3 -g --apcs=interwork -I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 517" --pd "STM32F10X_MD SETA 1"--list .\listings\startup_stm32f10x_md.lst --xref -o .\objects\startup_stm32f10x_md.o --depend .\objects\startup_stm32f10x_md.d)
-F (.\MAIN\main.c)(0x583593B5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\MAIN\main.c)(0x5836A8EB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB63C0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB63B6)
 I (.\CMSIS\stm32f10x.h)(0x562F8B3E)
@@ -18,11 +18,11 @@ I (.\SPL\inc\stm32f10x_wwdg.h)(0x547EAA60)
 I (.\SPL\inc\misc.h)(0x547EAA60)
 I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
-I (.\Library\self_control.h)(0x5835968C)
+I (.\Library\self_control.h)(0x5836A6F0)
 I (.\Library\uart.h)(0x582ECA5C)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
-I (.\Library\pwm.h)(0x58368C21)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
+I (.\Library\pwm.h)(0x5836A740)
 I (.\Library\motor.h)(0x5835A03E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB63B8)
 I (.\Library\buttons.h)(0x582B07C3)
@@ -179,8 +179,8 @@ I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
 I (.\SPL\inc\stm32f10x_wwdg.h)(0x547EAA60)
 I (.\SPL\inc\misc.h)(0x547EAA60)
 I (.\Library\macros.h)(0x582ED746)
-F (.\Library\self_control.c)(0x583598CB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\self_control.o --omf_browse .\objects\self_control.crf --depend .\objects\self_control.d)
-I (.\Library\self_control.h)(0x5835968C)
+F (.\Library\self_control.c)(0x5836A9E1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\self_control.o --omf_browse .\objects\self_control.crf --depend .\objects\self_control.d)
+I (.\Library\self_control.h)(0x5836A6F0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x55DB63C0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB63B6)
 I (.\CMSIS\stm32f10x.h)(0x562F8B3E)
@@ -200,12 +200,12 @@ I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
 I (.\Library\uart.h)(0x582ECA5C)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
-I (.\Library\pwm.h)(0x58368C21)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
+I (.\Library\pwm.h)(0x5836A740)
 I (.\Library\motor.h)(0x5835A03E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB63B8)
-F (.\Library\pwm.c)(0x583593B5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
-I (Library\pwm.h)(0x58368C21)
+F (.\Library\pwm.c)(0x5836A6F0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+I (Library\pwm.h)(0x5836A740)
 I (.\CMSIS\stm32f10x_conf.h)(0x582EDC3C)
 I (.\SPL\inc\stm32f10x_adc.h)(0x547EAA60)
 I (.\CMSIS\stm32f10x.h)(0x562F8B3E)
@@ -224,7 +224,7 @@ I (Library\macros.h)(0x582ED746)
 I (.\Services\time_service.h)(0x582ECC50)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB63B6)
 I (Library\motor.h)(0x5835A03E)
-I (.\Library\pwm.h)(0x58368C21)
+I (.\Library\pwm.h)(0x5836A740)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB63B8)
 F (.\Library\motor.c)(0x5835A03E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\motor.o --omf_browse .\objects\motor.crf --depend .\objects\motor.d)
 I (Library\motor.h)(0x5835A03E)
@@ -243,7 +243,7 @@ I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
 I (.\SPL\inc\stm32f10x_wwdg.h)(0x547EAA60)
 I (.\SPL\inc\misc.h)(0x547EAA60)
 I (Library\macros.h)(0x582ED746)
-I (.\Library\pwm.h)(0x58368C21)
+I (.\Library\pwm.h)(0x5836A740)
 I (.\Services\time_service.h)(0x582ECC50)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB63B6)
 I (.\Library\motor.h)(0x5835A03E)
@@ -267,9 +267,9 @@ I (.\SPL\inc\misc.h)(0x547EAA60)
 I (.\Services\time_service.h)(0x582ECC50)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x55DB63B6)
 I (.\Library\macros.h)(0x582ED746)
-I (Library\pwm.h)(0x58368C21)
+I (Library\pwm.h)(0x5836A740)
 I (Library\motor.h)(0x5835A03E)
-I (.\Library\pwm.h)(0x58368C21)
+I (.\Library\pwm.h)(0x5836A740)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x55DB63B8)
 F (.\Library\uart.c)(0x582ECB6E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (Library\uart.h)(0x582ECA5C)
@@ -334,7 +334,7 @@ I (.\MilliG\mg_common.h)(0x582ED84B)
 I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
 I (.\MilliG\mg_canal_level.h)(0x582ED801)
 I (.\Library\crc.h)(0x582ED717)
 I (.\Library\common.h)(0x582ECC04)
@@ -362,7 +362,7 @@ I (.\MilliG\mg_common.h)(0x582ED84B)
 I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
 I (.\Library\crc.h)(0x582ED717)
 I (.\Library\common.h)(0x582ECC04)
 F (.\MilliG\mg_common.c)(0x545B2560)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_common.o --omf_browse .\objects\mg_common.crf --depend .\objects\mg_common.d)
@@ -385,7 +385,7 @@ I (.\SPL\inc\misc.h)(0x547EAA60)
 I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
 I (.\MilliG\ganjubus_common.h)(0x582ED7BE)
 F (.\MilliG\mg_data_level.c)(0x545B2560)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_data_level.o --omf_browse .\objects\mg_data_level.crf --depend .\objects\mg_data_level.d)
 I (.\MilliG\mg_data_level.h)(0x582ED87A)
@@ -409,7 +409,7 @@ I (.\MilliG\mg_common.h)(0x582ED84B)
 I (.\Services\time_service.h)(0x582ECC50)
 I (.\Library\macros.h)(0x582ED746)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)
 I (.\Library\common.h)(0x582ECC04)
 F (.\MilliG\mg_regs.c)(0x545B2560)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I.\CMSIS -I.\MAIN -I.\SPL\inc -I.\SPL\src -I.\StartUp -I.\Services -I.\Library -I.\MilliG -I.\hd44780 --C99-I E:\GitHub\BUM\STM32F103C8\RTE-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I C:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="517" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER-o .\objects\mg_regs.o --omf_browse .\objects\mg_regs.crf --depend .\objects\mg_regs.d)
 I (.\MilliG\mg_regs.h)(0x582ED8E4)
@@ -428,4 +428,4 @@ I (.\SPL\inc\stm32f10x_tim.h)(0x547EAA60)
 I (.\SPL\inc\stm32f10x_usart.h)(0x547EAA60)
 I (.\SPL\inc\stm32f10x_wwdg.h)(0x547EAA60)
 I (.\SPL\inc\misc.h)(0x547EAA60)
-I (.\MilliG\mg_reg_names.h)(0x58359490)
+I (.\MilliG\mg_reg_names.h)(0x5836A7F2)

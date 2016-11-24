@@ -34,13 +34,24 @@ void InitSelfControlFsm( void )
 **************************************************************************************************/
 void SelfControlFsm( void )
 {	
-	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_BUTTON_STATE ))
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER_CH1 ))
 	{
-
+		SetPwmTarget( &Timer3, FIRST, (int8_t)MG_GetReg( MG_REG_RW_DEVICE_POWER_CH1) );
 	}
-	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER ))
+	
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER_CH2 ))
 	{
-		Timer3.pwmTargetChannel1 = MG_GetReg( MG_REG_RW_DEVICE_POWER );
+		SetPwmTarget( &Timer3, SECOND, (int8_t)MG_GetReg( MG_REG_RW_DEVICE_POWER_CH2) );
+	}
+	
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER_CH3 ))
+	{
+		SetPwmTarget( &Timer3, THIRD, (int8_t)MG_GetReg( MG_REG_RW_DEVICE_POWER_CH3) );
+	}
+	
+	if ( MG_IsRegChanged( MG_REG_RW_DEVICE_POWER_CH4 ))
+	{
+		SetPwmTarget( &Timer3, FOURS, (int8_t)MG_GetReg( MG_REG_RW_DEVICE_POWER_CH4) );
 	}
 }
 

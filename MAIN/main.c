@@ -87,9 +87,6 @@ int main( void )
 	//	InitPinOUT();
 	while(1)
 	{
-	//	ScanButtons( &Buttons );
-	//	ScanChangeButtons( &Buttons );
-		
 		//	SwitcDir и AccelerationState должны стоять именно в такой последовательности
 		SwitchDir ( &Timer3 );
 		AccelerationState ( &Timer3 );
