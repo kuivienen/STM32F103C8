@@ -9,8 +9,10 @@
 .\objects\uart.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\uart.o: .\CMSIS\stm32f10x.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\uart.o: .\SPL\inc\stm32f10x_exti.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_iwdg.h
+.\objects\uart.o: .\SPL\inc\stm32f10x_pwr.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\uart.o: .\SPL\inc\stm32f10x_usart.h

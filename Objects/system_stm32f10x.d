@@ -7,8 +7,10 @@
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\system_stm32f10x.o: .\CMSIS\stm32f10x.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_exti.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_iwdg.h
+.\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_pwr.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\system_stm32f10x.o: .\SPL\inc\stm32f10x_usart.h

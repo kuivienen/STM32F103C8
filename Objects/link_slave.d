@@ -9,8 +9,10 @@
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_adc.h
 .\objects\link_slave.o: .\CMSIS\stm32f10x.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\link_slave.o: .\SPL\inc\stm32f10x_exti.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_iwdg.h
+.\objects\link_slave.o: .\SPL\inc\stm32f10x_pwr.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\link_slave.o: .\SPL\inc\stm32f10x_usart.h

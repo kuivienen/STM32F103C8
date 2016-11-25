@@ -8,8 +8,10 @@
 .\objects\buttons.o: .\CMSIS\system_stm32f10x.h
 .\objects\buttons.o: .\CMSIS\stm32f10x_conf.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\buttons.o: .\SPL\inc\stm32f10x_exti.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_iwdg.h
+.\objects\buttons.o: .\SPL\inc\stm32f10x_pwr.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\buttons.o: .\SPL\inc\stm32f10x_usart.h

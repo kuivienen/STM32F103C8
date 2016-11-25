@@ -8,8 +8,10 @@
 .\objects\pwm.o: .\CMSIS\system_stm32f10x.h
 .\objects\pwm.o: .\CMSIS\stm32f10x_conf.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_dma.h
+.\objects\pwm.o: .\SPL\inc\stm32f10x_exti.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_gpio.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_iwdg.h
+.\objects\pwm.o: .\SPL\inc\stm32f10x_pwr.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_rcc.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_tim.h
 .\objects\pwm.o: .\SPL\inc\stm32f10x_usart.h

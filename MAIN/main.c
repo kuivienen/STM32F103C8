@@ -14,6 +14,25 @@
 
 #include <link_slave.h>
 
+/* Includes USB------------------------------------------------------------------*/
+#include <hw_config.h>
+#include "usb_lib.h"
+#include "usb_desc.h"
+#include "usb_pwr.h"
+
+
+/* Private typedef -----------------------------------------------------------*/
+/* Private define ------------------------------------------------------------*/
+/* Private macro -------------------------------------------------------------*/
+/* Private variables ---------------------------------------------------------*/
+/* Extern variables ----------------------------------------------------------*/
+extern __IO uint8_t Receive_Buffer[64];
+extern __IO  uint32_t Receive_length ;
+extern __IO  uint32_t length ;
+uint8_t Send_Buffer[64];
+uint32_t packet_sent=1;
+uint32_t packet_receive=1;
+
 
 void Blink(void)
 {
@@ -51,7 +70,7 @@ void OutputMCO() {
 int main( void )
 {
 	
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+	/*RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOC, ENABLE);	
 
@@ -84,17 +103,33 @@ int main( void )
 	InitIwdg();
 	//Blink();
 	//	InitOpticalSensor(&Spi1Struct);
-	//	InitPinOUT();
+	//	InitPinOUT();*/
+	
+	Set_System();
+  Set_USBClock();
+  USB_Interrupts_Config();
+  USB_Init();
 	while(1)
 	{
 		//	SwitcDir и AccelerationState должны стоять именно в такой последовательности
-		SwitchDir ( &Timer3 );
+	/*	SwitchDir ( &Timer3 );
 		AccelerationState ( &Timer3 );
 		
 		IWDG_ReloadCounter();
 
 		ProcessLinkSlave();
-		SelfControlFsm();		
+		SelfControlFsm();	*/
+			if (bDeviceState == CONFIGURED)
+    {
+      CDC_Receive_DATA();
+      /*Check to see if we have data yet */
+      if (Receive_length  != 0)
+      {
+        if (packet_sent == 1)
+          CDC_Send_DATA ((unsigned char*)Receive_Buffer,Receive_length);
+        Receive_length = 0;
+      }
+    }
 	}
 }
 
