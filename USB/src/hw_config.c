@@ -40,13 +40,14 @@
 /* Private variables ---------------------------------------------------------*/
 ErrorStatus HSEStartUpStatus;
 EXTI_InitTypeDef EXTI_InitStructure;
-extern __IO uint32_t packet_sent;
-extern __IO uint8_t Send_Buffer[VIRTUAL_COM_PORT_DATA_SIZE] ;
-extern __IO  uint32_t packet_receive;
-extern __IO uint8_t Receive_length;
+//extern __IO uint32_t packet_sent;
+//extern __IO uint8_t Send_Buffer[VIRTUAL_COM_PORT_DATA_SIZE] ;
+//extern __IO  uint32_t packet_receive;
+//extern __IO uint8_t Receive_length;
 
-uint8_t Receive_Buffer[64];
-uint32_t Send_length;
+
+//uint8_t Receive_Buffer[64];
+//uint32_t Send_length;
 static void IntToUnicode (uint32_t value , uint8_t *pbuf , uint8_t len);
 /* Extern variables ----------------------------------------------------------*/
 

@@ -16,8 +16,8 @@
 
 #include <milli_ganjubus.h>
 #include <common.h>
-#include <uart.h>
 #include <time_service.h>
+#include <USB_struct.h>
 
 
 
@@ -25,7 +25,7 @@
                                    œ–Œ“Œ“»œ€ √ÀŒ¡¿À‹Õ€’ ‘”Õ ÷»…
 **************************************************************************************************/
 
-void InitLinkSlave(uart_struct * uart);
+void InitLinkSlave( usb_struct * usb );
 void ResetLinkSlave(void);
 void ProcessLinkSlave(void);
 

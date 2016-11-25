@@ -32,6 +32,7 @@
 ".\objects\usb_istr.o"
 ".\objects\usb_prop.o"
 ".\objects\usb_pwr.o"
+".\objects\usb_struct.o"
 ".\objects\usb_core.o"
 ".\objects\usb_init.o"
 ".\objects\usb_int.o"

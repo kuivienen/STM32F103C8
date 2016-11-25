@@ -22,6 +22,11 @@
 .\objects\usb_endp.o: .\USBDriver\inc\usb_type.h
 .\objects\usb_endp.o: .\USB\inc\usb_conf.h
 .\objects\usb_endp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\usb_endp.o: .\USB\inc\USB_Struct.h
+.\objects\usb_endp.o: .\Library\macros.h
+.\objects\usb_endp.o: .\Services\time_service.h
+.\objects\usb_endp.o: .\USB\inc\usb_desc.h
+.\objects\usb_endp.o: .\USB\inc\hw_config.h
 .\objects\usb_endp.o: .\USBDriver\inc\usb_regs.h
 .\objects\usb_endp.o: .\USBDriver\inc\usb_def.h
 .\objects\usb_endp.o: .\USBDriver\inc\usb_core.h
@@ -29,6 +34,5 @@
 .\objects\usb_endp.o: .\USBDriver\inc\usb_sil.h
 .\objects\usb_endp.o: .\USBDriver\inc\usb_mem.h
 .\objects\usb_endp.o: .\USBDriver\inc\usb_int.h
-.\objects\usb_endp.o: .\USB\inc\usb_desc.h
 .\objects\usb_endp.o: .\USB\inc\usb_istr.h
 .\objects\usb_endp.o: .\USB\inc\usb_pwr.h

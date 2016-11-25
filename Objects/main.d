@@ -36,10 +36,13 @@
 .\objects\main.o: .\Library\crc.h
 .\objects\main.o: .\Library\common.h
 .\objects\main.o: .\MilliG\mg_data_level.h
+.\objects\main.o: .\USB\inc\USB_struct.h
+.\objects\main.o: .\USB\inc\usb_desc.h
 .\objects\main.o: .\USB\inc\hw_config.h
 .\objects\main.o: .\USB\inc\platform_config.h
 .\objects\main.o: .\USBDriver\inc\usb_type.h
 .\objects\main.o: .\USB\inc\usb_conf.h
+.\objects\main.o: .\USB\inc\USB_Struct.h
 .\objects\main.o: .\USBDriver\inc\usb_lib.h
 .\objects\main.o: .\USBDriver\inc\usb_regs.h
 .\objects\main.o: .\USBDriver\inc\usb_def.h
@@ -48,5 +51,4 @@
 .\objects\main.o: .\USBDriver\inc\usb_sil.h
 .\objects\main.o: .\USBDriver\inc\usb_mem.h
 .\objects\main.o: .\USBDriver\inc\usb_int.h
-.\objects\main.o: .\USB\inc\usb_desc.h
 .\objects\main.o: .\USB\inc\usb_pwr.h

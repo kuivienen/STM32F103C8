@@ -29,4 +29,10 @@
 .\objects\link_slave.o: .\Library\crc.h
 .\objects\link_slave.o: .\Library\common.h
 .\objects\link_slave.o: .\MilliG\mg_data_level.h
-.\objects\link_slave.o: .\Library\uart.h
+.\objects\link_slave.o: .\USB\inc\USB_struct.h
+.\objects\link_slave.o: .\USB\inc\usb_desc.h
+.\objects\link_slave.o: .\USB\inc\hw_config.h
+.\objects\link_slave.o: .\USB\inc\platform_config.h
+.\objects\link_slave.o: .\USBDriver\inc\usb_type.h
+.\objects\link_slave.o: .\USB\inc\usb_conf.h
+.\objects\link_slave.o: .\USB\inc\USB_Struct.h

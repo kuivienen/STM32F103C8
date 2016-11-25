@@ -35,7 +35,7 @@ static void lostLinkHandler(void);
 **************************************************************************************************/
 
 static bool MsgTransmited;
-static uart_struct * LinkUart;
+static usb_struct * LinkUsb;
 
 static mg_output Answer;
 static mg_input Request;
@@ -60,12 +60,12 @@ static enum states
 Возврат:   Нет
 Замечания:
 **************************************************************************************************/
-void InitLinkSlave(uart_struct * uart)
+void InitLinkSlave(usb_struct * usb)
 {
-	LinkUart = uart;
-//	LinkUart->baud = XBEE_BAUDRATE;
-	LinkUart->txCallback = onMsgTransmited;
-	InitUart(LinkUart);
+	LinkUsb = usb;
+//	LinkUsb->baud = XBEE_BAUDRATE;
+//	LinkUsb->txCallback = onMsgTransmited;
+//	InitUsb(LinkUsb);
 	MsgTransmited = false;
 	
 	MG_InitInputStruct(&Request, G_REQ);
@@ -114,9 +114,9 @@ void ProcessLinkSlave(void)
 		case COMPOSE_REQUEST:
 			{
 	//			Led1Off();
-				while (IsNewDataInUart(LinkUart) == true)
+				while (IsNewDataInUsb(LinkUsb) == true)
 				{
-					if (MG_ComposeMsg(GetByteFromUart(LinkUart), &Request) == RET_DONE)
+					if (MG_ComposeMsg(GetByteFromUsb(LinkUsb), &Request) == RET_DONE)
 					{
 	//					Led1On();
 						StartSoftTimer(&lostLinkTimer, MAX_CONNECTION_DELAY);
@@ -139,7 +139,7 @@ void ProcessLinkSlave(void)
 				{
 					MG_WrapMsg(&Answer);
 	//				enableTransmit();
-					SendDataToUart(LinkUart, MG_GetOutBufPtr(&Answer), MG_GetOutBufSize(&Answer));
+					SendDataToUsb(LinkUsb, MG_GetOutBufPtr(&Answer), MG_GetOutBufSize(&Answer));
 					MsgTransmited = false;
 					State = WAIT_FOR_TRANSMIT;
 				}
@@ -173,16 +173,7 @@ void ProcessLinkSlave(void)
                                        ЛОКАЛЬНЫЕ ФУНКЦИИ
 **************************************************************************************************/
 
-/**************************************************************************************************
-Описание:  Вызывается из модуля UART при завершении отправки сообщения
-Аргументы: Нет
-Возврат:   Нет
-Замечания:
-**************************************************************************************************/
-static void onMsgTransmited(void)
-{
-	MsgTransmited = true;
-}
+
 
 
 
@@ -207,54 +198,3 @@ static void lostLinkHandler(void)
 	MG_SetReg(MG_REG_RW_SLAVE_LIFTER_LINK2_GOTO_INIT, 0x00);*/
 }
 
-
-
-/**************************************************************************************************
-Описание:  Инициализация вывода DE
-Аргументы: Нет
-Возврат:   Нет
-Замечания:
-**************************************************************************************************/
-
-/*static void initGpio(void)
-{	
-	GPIO_InitTypeDef GPIO_InitStructure;
-	
-	GPIO_InitStructure.GPIO_Pin = PIN_PRI_RS485_DE;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_2MHz;
-	GPIO_Init(PORT_PRI_RS485_DE, &GPIO_InitStructure);  
-}*/
-
-
-
-
-/**************************************************************************************************
-Описание:  Разрешение передачи по линии RS-485
-Аргументы: Нет
-Возврат:   Нет
-Замечания:
-**************************************************************************************************/
-/*static void enableTransmit(void)
-{	
-	if (LinkUart == &PRI_RS485_UART)
-	{	
-		GPIO_SetBits(PORT_PRI_RS485_DE, PIN_PRI_RS485_DE);  
-	}
-}*/
-
-
-
-/**************************************************************************************************
-Описание:  Запрещение передачи по линии RS-485
-Аргументы: Нет
-Возврат:   Нет
-Замечания:
-**************************************************************************************************/
-/*static void disableTransmit(void)
-{
-	if (LinkUart == &PRI_RS485_UART)
-	{	
-		GPIO_ResetBits(PORT_PRI_RS485_DE, PIN_PRI_RS485_DE);  
-	}
-}*/

@@ -22,6 +22,11 @@
 .\objects\usb_init.o: .\USBDriver\inc\usb_type.h
 .\objects\usb_init.o: .\USB\inc\usb_conf.h
 .\objects\usb_init.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\usb_init.o: .\USB\inc\USB_Struct.h
+.\objects\usb_init.o: .\Library\macros.h
+.\objects\usb_init.o: .\Services\time_service.h
+.\objects\usb_init.o: .\USB\inc\usb_desc.h
+.\objects\usb_init.o: .\USB\inc\hw_config.h
 .\objects\usb_init.o: .\USBDriver\inc\usb_regs.h
 .\objects\usb_init.o: .\USBDriver\inc\usb_def.h
 .\objects\usb_init.o: .\USBDriver\inc\usb_core.h

@@ -8,7 +8,7 @@ void initTimParams( timer_struct * timer );
 void initTimGpio( timer_struct * timer );
 void initTimNvic( timer_struct * timer );
 
-void tim1IrqHandler( timer_struct * timer );
+void tim2IrqHandler( timer_struct * timer );
 void tim3IrqHandler( timer_struct * timer );
 void tim4IrqHandler( timer_struct * timer );
 
@@ -16,26 +16,26 @@ void tim4IrqHandler( timer_struct * timer );
 /**************************************************************************************************
                                        ГЛОБАЛЬНЫЕ ПЕРЕМЕННЫЕ
 **************************************************************************************************/
-#ifdef TIMER_1
-	timer_struct Timer1 =
+#ifdef TIMER_2
+	timer_struct Timer2 =
 	{
-		.regs 							= TIMER1_REGS,
+		.regs 							= TIMER2_REGS,
 		
-		.ch1Pin 						= TIMER1_PIN_CH1,
-		.ch1Port 						= TIMER1_PORT_CH1,
+		.ch1Pin 						= TIMER2_PIN_CH1,
+		.ch1Port 						= TIMER2_PORT_CH1,
 
-		.ch2Pin 						= TIMER1_PIN_CH2,
-		.ch2Port 						= TIMER1_PORT_CH2,
+		.ch2Pin 						= TIMER2_PIN_CH2,
+		.ch2Port 						= TIMER2_PORT_CH2,
 		
-		.ch3Pin 						= TIMER1_PIN_CH3,
-		.ch3Port 						= TIMER1_PORT_CH3,
+		.ch3Pin 						= TIMER2_PIN_CH3,
+		.ch3Port 						= TIMER2_PORT_CH3,
 		
-		.ch4Pin 						= TIMER1_PIN_CH4,
-		.ch4Port 						= TIMER1_PORT_CH4,
+		.ch4Pin 						= TIMER2_PIN_CH4,
+		.ch4Port 						= TIMER2_PORT_CH4,
 		
-		.freqSig						=	TIMER1_FREQ_SIG,
+		.freqSig						=	TIMER2_FREQ_SIG,
 		
-		.irq								=	TIMER1_IRQ,
+		.irq								=	TIMER2_IRQ,
 		
 		.pwmTargetChannel1	=	8,
 		.pwmTargetChannel2	=	8,
@@ -43,7 +43,7 @@ void tim4IrqHandler( timer_struct * timer );
 		.pwmCurrentChannel1 = -10,
 		.pwmCurrentChannel2 = -10,
 		
-		.pwmMax							=	(uint32_t)TIMER1_FREQ_SIG/TIMER1_FREQ_PWM,
+		.pwmMax							=	(uint32_t)TIMER2_FREQ_SIG/TIMER2_FREQ_PWM,
 		.pwmModTim					=	0,
 	};
 #endif
@@ -455,35 +455,37 @@ void disableChannel( timer_struct * timer, enum _Channel channel )
 }
 
 /**************************************************************************************************
-Описание:  Прерываение от TIM TIMER1
+Описание:  Прерываение от TIM TIMER2
 Аргументы: Нет
 Возврат:   Нет
 Замечания: 
 **************************************************************************************************/
-#ifdef TIMER_1
-void TIM1_UP_IRQHandler( void )
+#ifdef TIMER_2
+void TIM2_IRQHandler( void )
 {
-	tim1IrqHandler( &Timer1 );
+	tim2IrqHandler( &Timer2 );
 }
 #endif
 
 
-void tim1IrqHandler( timer_struct * timer ) {
-	TIM_ClearITPendingBit( timer->regs, TIM_IT_Update );
-	++timer->pwmModTim;
-	
-	if (timer->pwmModTim == timer->pwmMax*2) {
-		if ( timer->pwmCurrentChannel1 != 0 ) enableChannel( timer, FIRST );
-		if ( timer->pwmCurrentChannel2 != 0 ) enableChannel( timer, SECOND );
-		timer->pwmModTim = 0;
-	}
-	
-	if (timer->pwmModTim == abs(timer->pwmCurrentChannel1)*2) {
-		disableChannel( timer, FIRST );
-	}
-	
-	if (timer->pwmModTim == abs(timer->pwmCurrentChannel2)*2) {
-		disableChannel( timer, SECOND );
+void tim2IrqHandler( timer_struct * timer ) {
+	if (TIM_GetITStatus(timer->regs, TIM_IT_Update)) {
+		TIM_ClearITPendingBit( timer->regs, TIM_IT_Update );
+		++timer->pwmModTim;
+		
+		if (timer->pwmModTim == timer->pwmMax*2) {
+			if ( timer->pwmCurrentChannel1 != 0 ) enableChannel( timer, FIRST );
+			if ( timer->pwmCurrentChannel2 != 0 ) enableChannel( timer, SECOND );
+			timer->pwmModTim = 0;
+		}
+		
+		if (timer->pwmModTim == abs(timer->pwmCurrentChannel1)*2) {
+			disableChannel( timer, FIRST );
+		}
+		
+		if (timer->pwmModTim == abs(timer->pwmCurrentChannel2)*2) {
+			disableChannel( timer, SECOND );
+		}
 	}
 }
 

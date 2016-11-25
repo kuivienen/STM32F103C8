@@ -636,6 +636,11 @@
               <FileType>1</FileType>
               <FilePath>.\USB\src\usb_pwr.c</FilePath>
             </File>
+            <File>
+              <FileName>USB_struct.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\USB\src\USB_struct.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

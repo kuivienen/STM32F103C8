@@ -33,6 +33,7 @@
 #include "hw_config.h"
 #include "usb_istr.h"
 #include "usb_pwr.h"
+#include "USB_struct.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -43,8 +44,8 @@
 /* Private variables ---------------------------------------------------------*/
 extern __IO uint32_t packet_sent;
 extern __IO uint32_t packet_receive;
-extern __IO uint8_t Receive_Buffer[64];
-uint32_t Receive_length;
+//extern __IO uint8_t Receive_Buffer[64];
+//uint32_t Receive_length;
 /* Private function prototypes -----------------------------------------------*/
 /* Private functions ---------------------------------------------------------*/
 

@@ -17,35 +17,35 @@
 **************************************************************************************************/
 
 /**********настройка таймера для первого и второго канала управления*/
-#define TIMER_1
-	#define TIMER1_REGS						TIM1
+#define TIMER_2
+	#define TIMER2_REGS						TIM2
 	
 //*********пины комплиментарных выходов CH***********
 
-#define TIMER1_CH1	
-	#define TIMER1_PORT_CH1				GPIOA
-	#define TIMER1_PIN_CH1				GPIO_Pin_8
+#define TIMER2_CH1	
+	#define TIMER2_PORT_CH1				GPIOA
+	#define TIMER2_PIN_CH1				GPIO_Pin_8
 
-#define TIMER1_CH2	
-	#define TIMER1_PORT_CH2				GPIOA
-	#define TIMER1_PIN_CH2				GPIO_Pin_9
+#define TIMER2_CH2	
+	#define TIMER2_PORT_CH2				GPIOA
+	#define TIMER2_PIN_CH2				GPIO_Pin_9
 	
-#define TIMER1_CH3
-	#define TIMER1_PORT_CH3				GPIOA
-	#define TIMER1_PIN_CH3				GPIO_Pin_10
+#define TIMER2_CH3
+	#define TIMER2_PORT_CH3				GPIOA
+	#define TIMER2_PIN_CH3				GPIO_Pin_10
 	
-#define TIMER1_CH4
-	#define TIMER1_PORT_CH4				GPIOA
-	#define TIMER1_PIN_CH4				GPIO_Pin_11
+#define TIMER2_CH4
+	#define TIMER2_PORT_CH4				GPIOA
+	#define TIMER2_PIN_CH4				GPIO_Pin_11
 	
 //--------------------------------------------------
 
 //	флаг прерывания 
-	#define TIMER1_IRQ						TIM1_UP_IRQn
+	#define TIMER2_IRQ						TIM2_IRQn
 //	частота модулирующего сигнала
-	#define TIMER1_FREQ_SIG				50000
+	#define TIMER2_FREQ_SIG				50000
 //	частота огибающей	
-	#define TIMER1_FREQ_PWM				3000
+	#define TIMER2_FREQ_PWM				3000
 	
 	
 /******настройка таймера для третьего и четвертого канала управления****/	
@@ -85,8 +85,8 @@
 	#define TIMER3_REGS						TIM3
 //	флаг прерывания 
 	#define TIMER3_IRQ						TIM3_IRQn
-	#define TIMER3_CH1						&Timer1
-	#define TIMER3_CH2						&Timer1
+	#define TIMER3_CH1						&Timer2
+	#define TIMER3_CH2						&Timer2
 	#define TIMER3_CH3						&Timer4
 	#define TIMER3_CH4						&Timer4
 	
@@ -156,8 +156,8 @@ typedef struct str
 /**************************************************************************************************
                                          EXTERN-ПЕРЕМЕННЫЕ
 **************************************************************************************************/
-#ifdef TIMER_1
-	extern timer_struct Timer1;
+#ifdef TIMER_2
+	extern timer_struct Timer2;
 #endif
 
 #ifdef TIMER_4
@@ -178,8 +178,8 @@ void SwitchDir ( timer_struct * timer );
 void SetPwmTarget ( timer_struct * timer, enum _Channel channel, int8_t data );
 void switchDirFlag ( timer_struct * timer, enum _Channel channel );
 
-#ifdef TIMER_1
-	void TIM1_UP_IRQHandler( void );
+#ifdef TIMER_2
+	void TIM2_IRQHandler( void );
 #endif
 
 #ifdef TIMER_4
