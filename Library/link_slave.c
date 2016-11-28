@@ -116,9 +116,9 @@ void ProcessLinkSlave(void)
 	//			Led1Off();
 				while (IsNewDataInUsb(LinkUsb) == true)
 				{
+//					CDC_Send_DATA((unsigned char*)Receive_Buffer, Receive_length);
 					if (MG_ComposeMsg(GetByteFromUsb(LinkUsb), &Request) == RET_DONE)
 					{
-	//					Led1On();
 						StartSoftTimer(&lostLinkTimer, MAX_CONNECTION_DELAY);
 						State = PROCESS_REQUEST;
 					}
@@ -140,7 +140,9 @@ void ProcessLinkSlave(void)
 					MG_WrapMsg(&Answer);
 	//				enableTransmit();
 					SendDataToUsb(LinkUsb, MG_GetOutBufPtr(&Answer), MG_GetOutBufSize(&Answer));
+					CopyDataFromUsbToSend( &Usb1 );
 					MsgTransmited = false;
+					MsgTransmited = true;
 					State = WAIT_FOR_TRANSMIT;
 				}
 				else

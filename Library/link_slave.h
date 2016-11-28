@@ -18,7 +18,7 @@
 #include <common.h>
 #include <time_service.h>
 #include <USB_struct.h>
-
+#include <hw_config.h>
 
 
 /**************************************************************************************************

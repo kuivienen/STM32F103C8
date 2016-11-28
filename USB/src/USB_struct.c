@@ -17,12 +17,10 @@ __IO uint8_t Send_length;
 
 usb_struct Usb1 =
 {
-	.rxBuf			= Receive_Buffer,
-	.rxCounter	= &Receive_length,
+	.rxCounter	= 0,
 	.rxTail			=	0,
 	.rxHead			=	0,
-	.txBufPtr		= Send_Buffer,
-	.txCounter	=	&Send_length,
+	.txCounter	= 0,
 };
 
 /**************************************************************************************************
@@ -83,11 +81,42 @@ bool IsNewDataInUsb( usb_struct * usb )
 void SendDataToUsb( usb_struct * usb, uint8_t *buffer, uint16_t size )
 {
 	usb->txBufPtr = buffer;
-	*(usb->txCounter) = size - 1;
-	CDC_Send_DATA ((uint8_t *)usb->txBufPtr, (uint32_t)usb->txCounter);
+	usb->txCounter = size;
 }
 
+void CopyDataFromReceiveToUsb( usb_struct * usb )
+{
+	if( Receive_length > 0 )
+	{
+ 		if ( usb->rxCounter < RX_BUFFER_SIZE  )
+ 		{ 
+			for (uint8_t i = 0; i < Receive_length; ++i)
+			{
+				usb->rxBuf[ usb->rxHead ] = Receive_Buffer[i];
+				usb->rxHead++;
+				usb->rxHead %= RX_BUFFER_SIZE;
+				usb->rxCounter++;
+			}
+ 		}
+ 		else
+ 		{
+			usb->rxCounter = 0;
+			usb->rxTail = 0;
+			usb->rxHead = 0;
+ 		}
+		Receive_length = 0;
+	}
+}
 
+void CopyDataFromUsbToSend( usb_struct * usb )
+{
+ 	while ( usb->txCounter )	
+ 	{
+		usb->txCounter--;
+		Send_Buffer[Send_length] = *(usb->txBufPtr++);
+		Send_length++;
+ 	}
+}
 
 /**************************************************************************************************
                                        ÀŒ ¿À‹Õ€≈ ‘”Õ ÷»»

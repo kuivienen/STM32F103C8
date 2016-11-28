@@ -26,16 +26,14 @@
 
 typedef struct
 {
-	__IO uint8_t *rxBuf;
-	__IO uint8_t *rxCounter;
+	uint8_t rxBuf[ RX_BUFFER_SIZE ];
+	uint8_t rxCounter;
 	uint8_t rxTail;
 	uint8_t rxHead;
-	__IO uint8_t * txBufPtr;
-	__IO uint8_t *txCounter;
+	uint8_t * txBufPtr;
+	uint16_t txCounter;
 	
 } usb_struct;
-
-
 
 /**************************************************************************************************
                                    œ–Œ“Œ“»œ€ √ÀŒ¡¿À‹Õ€’ ‘”Õ ÷»…
@@ -44,6 +42,8 @@ typedef struct
 uint8_t GetByteFromUsb( usb_struct * usb );
 bool IsNewDataInUsb( usb_struct * usb );
 void SendDataToUsb( usb_struct * usb, uint8_t *buffer, uint16_t size );
+void CopyDataFromReceiveToUsb( usb_struct * usb );
+void CopyDataFromUsbToSend( usb_struct * usb );
 
 /**************************************************************************************************
                                          EXTERN-œ≈–≈Ã≈ÕÕ€≈

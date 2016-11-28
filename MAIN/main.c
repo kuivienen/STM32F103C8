@@ -111,18 +111,19 @@ int main( void )
 		if (bDeviceState == CONFIGURED)
     {
       CDC_Receive_DATA();
-//      if (Receive_length  != 0)
-//      {
-//        if (packet_sent == 1)
-//          CDC_Send_DATA ((unsigned char*)Receive_Buffer,Receive_length);
-//        Receive_length = 0;
-//      }
     }
 		ProcessLinkSlave();
 		SelfControlFsm();	
+		if (bDeviceState == CONFIGURED)
+    {
+			if (Send_length  != 0)
+      {
+        if (packet_sent == 1) CDC_Send_DATA ((unsigned char*)Send_Buffer, Send_length);
+        Send_length = 0;
+			}
+		}
 	}
 }
-
 
 
 /*************************************************************************************************/

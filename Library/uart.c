@@ -291,7 +291,6 @@ void SendDataToUart( uart_struct * uart, uint8_t *buffer, uint16_t size )
 {
 	uart->txBufPtr = buffer;
 	uart->txCounter = size - 1;
-//	GPIO_SetBits(uart->rtsPort, uart->rtsPin);
 	USART_SendData( uart->regs, *buffer );
 }
 

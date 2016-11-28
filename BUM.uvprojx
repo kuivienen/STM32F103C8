@@ -552,11 +552,6 @@
               <FilePath>.\Library\buttons.c</FilePath>
             </File>
             <File>
-              <FileName>uart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Library\uart.c</FilePath>
-            </File>
-            <File>
               <FileName>crc.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Library\crc.c</FilePath>
