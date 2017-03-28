@@ -1,5 +1,4 @@
 #ifndef __MG_REG_NAMES__
-
 #define __MG_REG_NAMES__
 
 
@@ -28,5 +27,5 @@
 #define MG_REG_RW_DEVICE_POWER_CH2					0X81	//	запись длительности огибающей
 #define MG_REG_RW_DEVICE_POWER_CH3					0X82	//	запись длительности огибающей
 #define MG_REG_RW_DEVICE_POWER_CH4					0X83	//	запись длительности огибающей
-#endif		/* __MG_REG_NAMES__ */
 
+#endif		/* __MG_REG_NAMES__ */

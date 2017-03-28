@@ -7,19 +7,17 @@
 #include <time_service.h>
 
 #include <self_control.h>
-#include <uart.h>
 
 #include <pwm.h>
-#include <buttons.h>
 
 #include <link_slave.h>
 
-/* Includes USB------------------------------------------------------------------*/
+//****************** Includes USB *************************************************
 #include <hw_config.h>
 #include "usb_lib.h"
 #include "usb_desc.h"
 #include "usb_pwr.h"
-
+//*********************************************************************************
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -33,37 +31,6 @@
 __IO uint32_t packet_sent=1;
 __IO uint32_t packet_receive=1;
 
-
-void Blink(void)
-{
-	GPIO_InitTypeDef GPIO_InitStructure;
-		
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	
-	GPIO_Init( GPIOB , &GPIO_InitStructure );
-	
-	GPIO_SetBits(GPIOB, GPIO_Pin_0);
-	Delay(1000);
-	GPIO_ResetBits(GPIOB, GPIO_Pin_0);
-	Delay(1000);
-}
-
-void OutputMCO() {
-	GPIO_InitTypeDef GPIO_InitStructure;
-
-
-	/* Output clock on MCO pin ---------------------------------------------*/
-
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_Init(GPIOA, &GPIO_InitStructure);
-
-	// pick one of the clocks to spew
-	RCC_MCOConfig(RCC_MCO_SYSCLK); // Put on MCO pin the: System clock selected
-}
 
 
 /*************************************************************************************************/
@@ -93,21 +60,23 @@ int main( void )
 	InitMotor( &Motor3 );
 	InitMotor( &Motor4 );
 
-	//InitMsgProcessor();
-	InitIwdg();
+	InitIwdg();							//	запуск WatchDog
 	
+	//*************инициализация USB****************
 	Set_System();
   Set_USBClock();
   USB_Interrupts_Config();
   USB_Init();
+	//**********************************************
 	
 	while(1)
 	{
 		//	SwitcDir и AccelerationState должны стоять именно в такой последовательности
-	/*	SwitchDir ( &Timer3 );
+		SwitchDir ( &Timer3 );
 		AccelerationState ( &Timer3 );
 		
-		IWDG_ReloadCounter();*/
+		IWDG_ReloadCounter();
+		
 		if (bDeviceState == CONFIGURED)
     {
       CDC_Receive_DATA();

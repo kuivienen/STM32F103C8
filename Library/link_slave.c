@@ -22,7 +22,7 @@
                                     œ–Œ“Œ“»œ€ ÀŒ ¿À‹Õ€’ ‘”Õ ÷»…
 **************************************************************************************************/
 
-static void onMsgTransmited(void);
+//static void onMsgTransmited(void);
 static void lostLinkHandler(void);
 //static void initGpio(void);
 //static void enableTransmit(void);

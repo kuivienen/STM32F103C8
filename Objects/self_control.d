@@ -20,7 +20,6 @@
 .\objects\self_control.o: .\SPL\inc\misc.h
 .\objects\self_control.o: .\Services\time_service.h
 .\objects\self_control.o: .\Library\macros.h
-.\objects\self_control.o: .\Library\uart.h
 .\objects\self_control.o: .\MilliG\mg_regs.h
 .\objects\self_control.o: .\MilliG\mg_reg_names.h
 .\objects\self_control.o: .\Library\pwm.h

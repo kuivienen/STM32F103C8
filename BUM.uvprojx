@@ -547,11 +547,6 @@
               <FilePath>.\Library\motor.c</FilePath>
             </File>
             <File>
-              <FileName>buttons.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Library\buttons.c</FilePath>
-            </File>
-            <File>
               <FileName>crc.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Library\crc.c</FilePath>
@@ -565,6 +560,11 @@
               <FileName>link_slave.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Library\link_slave.c</FilePath>
+            </File>
+            <File>
+              <FileName>utility.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Library\utility.c</FilePath>
             </File>
           </Files>
         </Group>
